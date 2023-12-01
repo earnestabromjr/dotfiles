@@ -1,0 +1,1 @@
+/home/nesto/github/mybash/.bashrc
