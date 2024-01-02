@@ -1,0 +1,185 @@
+#!/bin/zsh
+
+# Set the upstream for a new branch TODO: Test if HEAD is available for new branch
+function pushup(){
+ command git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+}
+
+function git {
+  if [[ "$1" == "clean" ]]; then
+    command git fetch --prune origin && git fetch -p && for branch in $(git for-each-ref --format '%(refname) %(upstream:track)' refs/heads | awk '$2 == "[gone]" {sub("refs/heads/", "", $1); print $1}'); do git branch -D $branch; done
+  else
+    command git "$@"
+  fi
+}
+
+function push {
+  if [[ "$1" == "-f" && "$@" != *"--help"* ]]; then
+    echo "push force with lease"
+    command git push --force-with-lease
+  elif [[ "$1" == "up" ]]; then
+    echo "push with upstream"
+    command git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+  else
+    command git push "$@"
+  fi
+}
+
+# git fixup
+function fixup(){
+  command git commit --fixup $1 && git rebase -i --autosquash $1~
+}
+
+# squash commit
+function squash() {
+  if [ $1 ]; then
+    git reset --soft HEAD~$1 &&
+    git commit --edit -m"$(git log --format=%B --reverse HEAD..HEAD@{1})"
+  else
+    echo "You need to append the X ammout of commits you want to squash"
+  fi
+}
+
+function npm() {
+  # Initialize the current directory as the starting point
+  dir=$PWD
+  # Initialize the lock file and the command as empty
+  lockFile=""
+  command=""
+  # Loop until the lock file or the command is found, or the depth limit is reached
+  while [[ -z $lockFile || -z $command ]]; do
+    # Check if there is a package-lock.json file in the current directory
+    if [ -f "$dir/package-lock.json" ]; then
+      # Set the lock file and the command
+      lockFile="package-lock.json"
+      command="npm"
+    # Check if there is a yarn.lock file in the current directory
+    elif [ -f "$dir/yarn.lock" ]; then
+      # Set the lock file
+      lockFile="yarn.lock"
+      # Check if yarn is installed
+      if yarn --version >/dev/null 2>&1; then
+        # Set the command
+        command="yarn"
+      else
+        # Print an error message and exit
+        echo "found a yarn.lock file but yarn is not installed, run npm install -g yarn"
+        exit 1
+      fi
+    # Check if there is a pnpm-lock.yaml file in the current directory
+    elif [ -f "$dir/pnpm-lock.yaml" ]; then
+      # Set the lock file
+      lockFile="pnpm-lock.yaml"
+      # Check if pnpm is installed
+      if pnpm --version >/dev/null 2>&1; then
+        # Set the command
+        command="pnpm"
+      else
+        # Print an error message and exit
+        echo "found a pnpm-lock.yaml file but pnpm is not installed, run npm install -g pnpm"
+        exit 1
+      fi
+    # Check if the depth limit is reached
+    elif [[ $dir == "/" || $dir == "." || $dir == ".." ]]; then
+      # Break the loop
+      break
+    else
+      # Get the parent directory of the current directory
+      dir=$(dirname "$dir")
+    fi
+  done
+  # Check if the lock file and the command are found
+  if [[ -n $lockFile && -n $command ]]; then
+    # Print a message and run the command with the arguments
+    echo "found a $lockFile file, using $command"
+    command $command "$@"
+  else
+    # Print a message and use npm as the default
+    echo "no package manager found, using npm"
+    command npm "$@"
+  fi
+}
+
+# Local Development
+alias dev="npm run dev"
+alias start="npm run start"
+alias build="npm run build"
+alias run="npm run"
+alias exec='PATH=$(npm bin):$PATH'
+alias projects="cd ~/Projects"
+alias p="projects"
+alias open="explorer.exe"
+
+# killport
+function kp(){
+  port="$(lsof -t -i:$1)"
+  bold=`tput bold`
+  normal=`tput sgr0`
+  if [[ "${#port}" -gt 0 ]]; then
+    echo "closing port ${bold}$1"
+    command kill -9 "$(fuser -n tcp $1 2> /dev/null)"
+    echo "port ${bold}$1 ${normal}closed"
+  else
+    echo "port ${bold}$1 ${normal}not in use"
+  fi
+}
+
+# Linux: `openssl rand -hex 32` or go to https://generate-secret.now.sh/32
+function secret() {
+  command openssl rand -hex 32
+}
+
+# Docker
+function dockerRun(){
+  if [ $1 = "redis" ]; then
+    command docker run -p 6379:6379 --rm --name redis -d redis
+  else
+    command docker run $@
+  fi
+}
+
+# Redis
+function redis(){
+  local RUNNING=false
+
+  ## Check if redis is running
+  if [ "$( docker container inspect -f '{{.State.Status}}' "redis" )" = "running" ]; then
+    RUNNING=true
+  fi
+
+  ## Open Redis CLI
+  if [ $1 = "cli" ]; then
+    if [ "$RUNNING" = "false" ]; then
+      command docker run -p 6379:6379 --rm --name redis -d redis
+      echo "🟢 redis instance started"
+      command docker exec -it redis redis-cli
+    else
+      command docker exec -it redis redis-cli
+    fi 
+  fi
+
+  ## Start redis instance
+  if [[ $1 = "start" || $1 = "run" ]]; then
+    if [ "$RUNNING" = "false" ]; then
+      command docker run -p 6379:6379 --rm --name redis -d redis
+      echo "🟢 redis instance started"
+    else
+      echo "🔵 redis instance already been started"
+    fi
+  fi
+
+  ## Stop redis instance
+  if [ $1 = "stop" ]; then
+    if [ "$RUNNING" = "false" ]; then
+      echo "🟠 redis instance not found"
+    else
+      command docker stop redis
+      echo "🔴 redis instance stopped"
+    fi
+  fi
+}
+
+alias redis-cli="docker exec -it redis redis-cli"
+
+echo "Welcome back $(echo $USER) 👋\n"
+alias code="/mnt/c/Users/%userprofile%/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code"
