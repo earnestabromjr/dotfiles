@@ -1,0 +1,40 @@
+live_config_reload: true
+window:
+  dynamic_title: true
+  opacity: 0.7
+
+cursor:
+  style:
+    shape: Underline
+    vi_mode_style: Beam
+
+selection:
+  save_to_clipboard: true
+
+scrolling:
+  history: 2000
+
+shell:
+  program: /usr/bin/zsh
+
+font:
+  normal: 
+    family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  italic:
+    family: Hack Nerd Font
+    style: Regualr Italic
+  bold_italic:
+    family: Hack Nerd Font
+    style: Bold Italic
+
+  # Themes
+import:
+  - ~/.config/alacritty/themes/themes/monokai_charcoal.yml
+
+# Key Bindings
+key_bindings:
+  - { key: Space, mods: Shift|Control, mode: ~Search, action: ToggleViMode }
