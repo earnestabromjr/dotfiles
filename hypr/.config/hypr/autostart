@@ -8,11 +8,14 @@ scripts=$config/scripts
 dunst &
 
 # waybar
-#$scripts/launch_waybar &
-#$scripts/tools/dynamic &
+$scripts/launch_waybar &
+$scripts/tools/dynamic &
 
 # wallpaper
 $scripts/wall $config/wallpapers/cloud.png &
+
+# XDG
+$scripts/xdg-portal-hyprland &
 
 # effects
 $scripts/rgb &
