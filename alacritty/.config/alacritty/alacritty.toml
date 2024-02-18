@@ -19,10 +19,10 @@ history = 2_000
 program = "/usr/bin/zsh"
 
 [font]
-normal = {family = "Hack Nerd Font", style = "Regular"}
-bold = {family = "Hack Nerd Font", style = "Bold"}
-italic = {family = "Hack Nerd Font", style = "Regualr Italic"}
-font.bold_italic = {family = "Hack Nerd Font", style = "Bold Italic"}
+normal = {family = "Hack Nerd Font Mono", style = "Regular"}
+bold = {family = "Hack Nerd Font Mono", style = "Bold"}
+italic = {family = "Hack Nerd Font Mono", style = "Regualr Italic"}
+font.bold_italic = {family = "Hack Nerd Font Mono", style = "Bold Italic"}
 
 [keyboard]
 key = "Space"
