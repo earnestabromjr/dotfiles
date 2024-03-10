@@ -70,7 +70,7 @@ ZSH_THEME="rgm" # set by `omz`
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aliases npm ubuntu systemadmin systemd fzf zoxide npm node ripgrep themes ssh-agent tmux)
+plugins=(git aliases npm ubuntu systemadmin systemd fzf zoxide npm node ripgrep themes ssh-agent tmux colorize)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,3 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:~/.scripts/bin
 export LIBVIRT_DEFAULT_URI='qemu:///system'
+export EDITOR="nvim"
+export VISUAL="code"
+
+if [ -e /home/nesto/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nesto/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
