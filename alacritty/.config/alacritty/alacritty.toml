@@ -6,8 +6,8 @@ dynamic_title = true
 opacity = 0.7
 
 [cursor]
-style = {shape = "Underline"}
-vi_mode_style = {shape ="Beam"}
+style = {shape = "Beam"}
+vi_mode_style = {shape ="Underline"}
 
 [selection]
 save_to_clipboard = true
