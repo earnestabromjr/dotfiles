@@ -249,6 +249,7 @@ alias undopush "git push -f origin HEAD^:master"
 
 # Personal Aliases
 alias gitdot="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias mkdir="mkdir -p"
 
 # Neovim aliases
 alias v="nvim" # default neovim config
