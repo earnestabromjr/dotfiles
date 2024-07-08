@@ -185,7 +185,7 @@ function less
 end
 
 function cd
-    builtin cd $argv; and ls
+    z $argv; and ls
 end
 
 ### ALIASES ###
@@ -291,3 +291,9 @@ set fish_pager_color_prefix normal --bold underline
 set fish_pager_color_prefix white --bold --underline
 set fish_pager_color_progress brwhite --background=cyan
 set fish_color_search_match --background="#60AEFF"
+
+if status is-interactive
+	if type -q atuin
+		atuin init fish | source
+	end
+end
