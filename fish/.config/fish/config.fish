@@ -54,7 +54,7 @@ end
 
 # sets tools
 set -x EDITOR nvim
-set -x VISUAL subl
+set -x VISUAL nvim
 #set -x TERM alacritty
 # Sets the terminal type for proper colors
 set TERM "xterm-256color"
@@ -197,10 +197,9 @@ alias ll="ls -alFh"
 alias l="ls"
 alias l.="ls -A | egrep '^\.'"
 alias listdir="ls -d */ > list"
-alias ls="eza -lag --header"
 
 if type -q eza
-    alias ls="eza --long"
+    alias ls="eza -lag --header"
     alias xls="eza -a --icons --color=always --group-directories-first"
     alias xll="eza -lag --icons --color=always --group-directories-first --octal-permissions"
 end
