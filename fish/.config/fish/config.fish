@@ -257,7 +257,7 @@ alias vc="NVIM_APPNAME=NvChad nvim" # NvChad
 alias vk="NVIM_APPNAME=kickstart nvim" # Kickstart
 alias va="NVIM_APPNAME=AstroNvim nvim" # AstroVim
 
-fastfetch
+# fastfetch
 
 # colors to set or unset
 
