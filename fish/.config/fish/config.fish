@@ -184,9 +184,9 @@ function less
     command less -R $argv
 end
 
-function cd
-    z $argv; and ls
-end
+# function cd
+    # z $argv; and ls
+# end
 
 ### ALIASES ###
 
