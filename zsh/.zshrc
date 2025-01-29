@@ -141,7 +141,7 @@ function nvims() {
   NVIM_APPNAME=$config nvim $@
 }
 
-bindkey "^[a "nvims\n"
+bindkey "^[a "nvims\n""
 
 # Pacman Aliases
 alias paci="sudo pacman -S"
