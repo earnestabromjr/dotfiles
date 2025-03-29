@@ -34,8 +34,8 @@ vim.keymap.set('v', 'jj', '<Esc>', { silent = true })
 vim.keymap.set('n', '<leader>t', '<Cmd>Neotree<CR>', { silent = true })
 
 -- Keymap to write and quit files
-vim.keymap.set('n', '<leader>fw', '<Cmd>write<CR>')
-vim.keymap.set('n', '<leader>fq', '<Cmd>quit<CR>')
+vim.keymap.set('n', '<leader>fw', '<Cmd>write<CR>', { desc = 'Save file' })
+vim.keymap.set('n', '<leader>fq', '<Cmd>quit<CR>', { desc = 'Quit' })
 
 --Keymaps to navigate windows
 vim.keymap.set('n', '<leader>j', '<C-w>w', { silent = true })
@@ -63,10 +63,11 @@ local harpoon = require("harpoon")
 harpoon:setup()
 -- REQUIRED
 
-vim.keymap.set("n", "<leader>la", function() harpoon:list():append() end)
-vim.keymap.set("n", "<leader>h", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+vim.keymap.set("n", "<leader>la", function() harpoon:list():append() end, { desc = 'Add file to harpoon' })
+vim.keymap.set("n", "<leader>h", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end,
+  { desc = 'List harpooned files' })
 
-vim.keymap.set("n", "<leader>hh", function() harpoon:list():select(1) end)
-vim.keymap.set("n", "<leader>hj", function() harpoon:list():select(2) end)
-vim.keymap.set("n", "<leader>hk", function() harpoon:list():select(3) end)
-vim.keymap.set("n", "<leader>hl", function() harpoon:list():select(4) end)
+vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
+vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
+vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
+vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)

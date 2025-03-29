@@ -16,6 +16,7 @@ set $mod2 Mod1
 set $browser brave-browser
 set $editor subl
 set $termeditor "kitty launch nvim"
+set $filemanager thunar
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -94,6 +95,7 @@ bindsym $mod+Shift+w exec $browser
 bindsym $mod+Shift+e exec $editor
 bindsym $mod+Shift+Control+e exec $termeditor
 bindsym Control+$mod2+v exec xclipboard
+bindsym $mod+Shift+f exec $filemanager
 
 # change focus
 bindsym $mod+h focus left
@@ -238,7 +240,7 @@ bindsym $mod+$mod2+r mode "resize"
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
+gaps inner 10
 gaps outer -2
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
