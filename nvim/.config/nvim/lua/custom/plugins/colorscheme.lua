@@ -1,9 +1,9 @@
 return {
-	'rose-pine/neovim',
+	'navarasu/onedark.nvim',
 	priority = 1000,
-	name = "rose-pine",
-	variant = "main",
+	name = "onedark",
+	style = 'deep',
 	config = function()
-		vim.cmd.colorscheme('rose-pine')
+		vim.cmd.colorscheme('onedark')
 	end
 }

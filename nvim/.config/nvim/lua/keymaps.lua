@@ -32,6 +32,7 @@ vim.keymap.set('i', 'jj', '<Esc>', { silent = true })
 vim.keymap.set('v', 'jj', '<Esc>', { silent = true })
 -- Keymap to launch neotree
 vim.keymap.set('n', '<leader>t', '<Cmd>Neotree<CR>', { silent = true })
+vim.keymap.set('n', '<leader>tb', '<Cmd>Neotree toggle show buffers left<CR>', { silent = true })
 
 -- Keymap to write and quit files
 vim.keymap.set('n', '<leader>fw', '<Cmd>write<CR>', { desc = 'Save file' })
@@ -51,6 +52,8 @@ vim.keymap.set('n', '<leader><Down>', '<C-w>-', { silent = true })
 -- Keymaps to navigate buffers
 vim.keymap.set('n', '<leader>bb', '<Cmd>bp<CR>', { silent = true })
 vim.keymap.set('n', '<leader>bn', '<Cmd>bn<CR>', { silent = true })
+vim.keymap.set('n', '<leader>bl', '<Cmd>ls<CR>', { silent = true })
+vim.keymap.set('n', '<leader>bd', '<Cmd>bd<CR>', { silent = true })
 
 -- Keymaps to open terminal
 vim.keymap.set('n', '<leader>T', '<Cmd>terminal<CR>')
