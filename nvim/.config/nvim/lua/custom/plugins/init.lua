@@ -3,4 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+	{ 'echasnovski/mini.icons', version = false },
+	{ 'preservim/nerdtree' },
+	{ 'ryanoasis/vim-devicons' },
 }

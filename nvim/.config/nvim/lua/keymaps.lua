@@ -33,6 +33,9 @@ vim.keymap.set('v', 'jj', '<Esc>', { silent = true })
 -- Keymap to launch neotree
 vim.keymap.set('n', '<leader>t', '<Cmd>Neotree<CR>', { silent = true })
 vim.keymap.set('n', '<leader>tb', '<Cmd>Neotree toggle show buffers left<CR>', { silent = true })
+vim.keymap.set({ 'n', 'i' }, '<C-n>', '<Cmd>NERDTree<CR>', { desc = "NerdTree" })
+vim.keymap.set({ 'n', 'i' }, '<C-t>', '<Cmd>NERDTreeToggle<CR>', { desc = "Toggle NerdTree" })
+vim.keymap.set({ 'n', 'i' }, '<C-f>', '<Cmd>NERDTreeFind<CR>', { desc = "NerdTree Find" })
 
 -- Keymap to write and quit files
 vim.keymap.set('n', '<leader>fw', '<Cmd>write<CR>', { desc = 'Save file' })
@@ -74,3 +77,6 @@ vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
 vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
 vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)
+
+-- Codeium keys
+vim.keymap.set("n", "<leader>cc", "<Cmd>Codeium Chat<CR>", { silent = true })
