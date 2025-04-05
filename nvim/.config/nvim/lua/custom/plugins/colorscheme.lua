@@ -4,15 +4,20 @@ return {
 		priority = 1000,
 		name = "onedark",
 		style = 'deep',
-		config = function()
-			vim.cmd.colorscheme('onedark')
-		end
 	},
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
 		priority = 1000,
 		opts = {},
+		config = function()
+			vim.cmd.colorscheme('tokyonight-night')
+		end
+	},
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
 	},
 
 }
