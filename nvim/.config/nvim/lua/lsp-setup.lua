@@ -72,7 +72,8 @@ local servers = {
   gopls = {},
   pyright = {},
   -- rust_analyzer = {},
-  ts_ls = {},
+  ts_ls = { filetypes = { 'javascript', 'typescript', 'typescriptreact', 'typescript.tsx' },
+  },
   html = { filetypes = { 'html', 'twig', 'hbs' } },
 
   lua_ls = {

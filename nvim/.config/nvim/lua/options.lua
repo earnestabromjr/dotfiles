@@ -11,9 +11,14 @@ vim.wo.number = true
 -- Relative line numbers
 vim.wo.relativenumber = true
 
+-- Set scrolloff to 10
+vim.o.scrolloff = 10
+
 -- Tabs and spacing
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
+vim.o.tabstop = 4
+vim.o.expandtab = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
