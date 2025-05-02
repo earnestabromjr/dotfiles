@@ -31,14 +31,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set('i', 'jj', '<Esc>', { silent = true })
 vim.keymap.set('v', 'jj', '<Esc>', { silent = true })
 -- Keymap to launch neotree
-vim.keymap.set('n', '<leader>t', '<Cmd>Neotree<CR>', { silent = true })
-vim.keymap.set('n', '<leader>tb', '<Cmd>Neotree toggle show buffers left<CR>', { silent = true })
+vim.keymap.set('n', '<leader>ff', '<Cmd>Neotree position=right<CR>', { silent = true })
+vim.keymap.set('n', '<leader>fb', '<Cmd>Neotree toggle show buffers left<CR>', { silent = true })
 -- NerdTree
 vim.keymap.set({ 'n', 'i' }, '<C-t>', '<Cmd>NERDTreeToggle<CR>', { desc = "Toggle NerdTree" })
-
--- Keymap to write and quit files
-vim.keymap.set('n', '<leader>fw', '<Cmd>write<CR>', { desc = 'Save file' })
-vim.keymap.set('n', '<leader>fq', '<Cmd>quit<CR>', { desc = 'Quit' })
 
 --Keymaps to navigate windows
 vim.keymap.set('n', '<leader>j', '<C-w>w', { silent = true })
@@ -57,8 +53,20 @@ vim.keymap.set('n', '<leader>bn', '<Cmd>bn<CR>', { silent = true })
 vim.keymap.set('n', '<leader>bl', '<Cmd>ls<CR>', { silent = true })
 vim.keymap.set('n', '<leader>bd', '<Cmd>bd<CR>', { silent = true })
 
+-- Keymaps to navigate tabs
+vim.keymap.set('n', '<Tab>', '<Cmd>tabnext<CR>', { silent = true })
+vim.keymap.set('n', '<S-Tab>', '<Cmd>tabprevious<CR>', { silent = true })
+
 -- Keymaps to open terminal
-vim.keymap.set('n', '<leader>T', '<Cmd>terminal<CR>')
+vim.keymap.set('n', '<leader>t', '<Cmd>ToggleTerm size=10 direction=horizontal<CR>',
+  { desc = "Toggle Horizontal Terminal" })
+vim.keymap.set('n', '<leader>tt', '<Cmd>ToggleTerm size=10 direction=tab<CR>', { desc = "Toggle Tab Terminal" })
+vim.keymap.set('n', '<leader>tf', '<Cmd>ToggleTerm size=10 direction=float<CR>', { desc = "Toggle Float Terminal" })
+vim.keymap.set('n', '<leader>tn', '<Cmd>lua _NODE_TOGGLE()<CR>', { desc = "Toggle Node Terminal" })
+vim.keymap.set('n', '<leader>tp', '<Cmd>lua _PYTHON_TOGGLE()<CR>', { desc = "Toggle Python Terminal" })
+vim.keymap.set('n', '<leader>th', '<Cmd>lua _BTOP_TOGGLE()<CR>', { desc = "Toggle btop Terminal" })
+vim.keymap.set('n', '<leader>tl', '<Cmd>lua _LAZYGIT_TOGGLE()<CR>', { desc = "Toggle Lazygit Terminal" })
+vim.keymap.set('n', '<leader>ts', '<Cmd>lua _LIVE_SERVER_TOGGLE()<CR>', { desc = "Toggle Live Server Terminal" })
 
 
 -- Keymaps for Harpoon
@@ -68,8 +76,8 @@ local harpoon = require("harpoon")
 harpoon:setup()
 -- REQUIRED
 
-vim.keymap.set("n", "<leader>la", function() harpoon:list():append() end, { desc = 'Add file to harpoon' })
-vim.keymap.set("n", "<leader>h", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end,
+vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end, { desc = 'Add file to harpoon' })
+vim.keymap.set("n", "<leader>hm", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end,
   { desc = 'List harpooned files' })
 
 vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
@@ -77,5 +85,9 @@ vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
 vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)
 
--- Codeium keys
--- vim.keymap.set("n", "<leader>cc", "<Cmd>Codeium Chat<CR>", { silent = true })
+--
+-- CodeCompanion keys
+vim.keymap.set("n", "<leader>cp", "<Cmd>CodeCompanion<CR>", { desc = "CodeCompanion Prompt" })
+
+-- Copilot keys
+vim.keymap.set("n", "<leader>cc", "<Cmd>CopilotChat<CR>", { desc = "Copilot Chat" })
