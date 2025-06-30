@@ -1,0 +1,19 @@
+---
+- hosts: ubuntu
+  become: true
+  vars:
+    users:
+      - username: "ta"
+        oh_my_zsh:
+          theme: "gnzh"
+          plugins:
+            - "git"
+            - "zsh-syntax-highlighting"
+            - "zsh-autosuggestions"
+            - "systemd"
+            - "systemadmin"
+            - "fzf"
+            - "docker"
+            -
+  roles:
+    - role: gantsign.oh-my-zsh
