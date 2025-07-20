@@ -28,8 +28,8 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- vim: ts=2 sts=2 sw=2 et
 
 -- Personal keymaps
-vim.keymap.set('i', 'jj', '<Esc>', { silent = true })
-vim.keymap.set('v', 'jj', '<Esc>', { silent = true })
+vim.keymap.set('i', 'jk', '<Esc>', { silent = true })
+vim.keymap.set('v', 'jk', '<Esc>', { silent = true })
 -- Keymap to launch neotree
 vim.keymap.set('n', '<leader>ff', '<Cmd>Neotree position=right<CR>', { silent = true })
 vim.keymap.set('n', '<leader>fb', '<Cmd>Neotree toggle show buffers left<CR>', { silent = true })
@@ -84,6 +84,12 @@ vim.keymap.set("n", "<leader>1", function() harpoon:list():select(1) end)
 vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end)
 vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end)
+vim.keymap.set("n", "<leader>5", function() harpoon:list():select(5) end)
+vim.keymap.set("n", "<leader>6", function() harpoon:list():select(6) end)
+vim.keymap.set("n", "<leader>7", function() harpoon:list():select(7) end)
+vim.keymap.set("n", "<leader>8", function() harpoon:list():select(8) end)
+vim.keymap.set("n", "<leader>9", function() harpoon:list():select(9) end)
+vim.keymap.set("n", "<leader>0", function() harpoon:list():select(0) end)
 
 --
 -- CodeCompanion keys

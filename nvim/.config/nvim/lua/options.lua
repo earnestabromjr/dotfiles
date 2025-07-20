@@ -11,6 +11,9 @@ vim.wo.number = true
 -- Relative line numbers
 vim.wo.relativenumber = true
 
+-- Enable cursor line
+vim.wo.cursorline = true
+
 -- Set scrolloff to 10
 vim.o.scrolloff = 10
 

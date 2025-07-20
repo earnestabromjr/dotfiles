@@ -1,0 +1,28 @@
+{
+  "languageserver": {
+    "python": {
+      "command": "pylsp",
+      "filetypes": ["python"],
+      "settings": {
+        "pylsp": {
+          "plugins": {
+            "pycodestyle": {
+              "enabled": true,
+              "maxLineLength": 88
+            },
+            "pydocstyle": {
+              "enabled": true
+            },
+            "mccabe": {
+              "enabled": true
+            },
+            "pyflakes": {
+              "enabled": true
+            }
+          }
+        }
+      }
+    },
+  }
+}
+
