@@ -76,6 +76,8 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 plugins=(git aliases npm ubuntu systemadmin systemd fzf zoxide npm node ripgrep themes ssh-agent tmux colorize zsh-syntax-highlighting zsh-interactive-cd zsh-autosuggestions)
 
+zstyle :omz:plugins:ssh-agent identities earnestabromjr@gh eabromjr@gh
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
