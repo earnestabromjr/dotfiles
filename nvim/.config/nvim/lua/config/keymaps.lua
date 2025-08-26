@@ -1,31 +1,14 @@
--- [[ Basic Keymaps ]]
+-- Anakins Keymaps
 
--- Keymaps for better default experience
--- See `:help vim.keymap.set()`
-vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+-- Keymaps to navigate buffers
+vim.keymap.set('n', '<leader>bb', '<Cmd>bp<CR>', { silent = true })
+vim.keymap.set('n', '<leader>bn', '<Cmd>bn<CR>', { silent = true })
+vim.keymap.set('n', '<leader>bl', '<Cmd>ls<CR>', { silent = true })
+vim.keymap.set('n', '<leader>bd', '<Cmd>bd<CR>', { silent = true })
 
--- Remap for dealing with word wrap
-vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
-vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+-- Keymaps for file navigation
+vim.keymap.set('n', '<leader>o', '<Cmd>Oil<CR>', { desc = 'Oil' })
 
--- Diagnostic keymaps
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
-
--- [[ Highlight on yank ]]
--- See `:help vim.highlight.on_yank()`
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
-vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = '*',
-})
-
--- vim: ts=2 sts=2 sw=2 et
 
 -- Personal keymaps
 vim.keymap.set('i', 'jk', '<Esc>', { silent = true })
@@ -46,12 +29,6 @@ vim.keymap.set('n', '<leader><Left>', '<C-w><', { silent = true })
 vim.keymap.set('n', '<leader><Right>', '<C-w>>', { silent = true })
 vim.keymap.set('n', '<leader><Up>', '<C-w>+', { silent = true })
 vim.keymap.set('n', '<leader><Down>', '<C-w>-', { silent = true })
-
--- Keymaps to navigate buffers
-vim.keymap.set('n', '<leader>bb', '<Cmd>bp<CR>', { silent = true })
-vim.keymap.set('n', '<leader>bn', '<Cmd>bn<CR>', { silent = true })
-vim.keymap.set('n', '<leader>bl', '<Cmd>ls<CR>', { silent = true })
-vim.keymap.set('n', '<leader>bd', '<Cmd>bd<CR>', { silent = true })
 
 -- Keymaps to navigate tabs
 vim.keymap.set('n', '<Tab>', '<Cmd>tabnext<CR>', { silent = true })

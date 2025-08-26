@@ -3,44 +3,30 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-	{ 'echasnovski/mini.icons', version = false },
-	{ 'preservim/nerdtree' },
-	{ 'ryanoasis/vim-devicons' },
-	{
-		'stevearc/conform.nvim',
-		opt = {},
-		config = function()
-			require('conform').setup({
-				formatters_by_ft = {
-					javascript = { 'prettier' },
-					javascriptreact = { 'prettier' },
-					typescript = { 'prettier' },
-					typescriptreact = { 'prettier' },
-					json = { 'prettier' },
-					yaml = { 'prettier' },
-					html = { 'prettier' },
-					css = { 'prettier' },
-					scss = { 'prettier' },
-					less = { 'prettier' },
-					md = { 'prettier' },
-					txt = { 'prettier' },
-					lua = { 'stylua' },
-					-- ruby = { 'rubocop' },
-					go = { 'gofmt' },
-					sh = { 'shfmt' },
-					python = { 'black' },
-					-- php = { 'php-cs-fixer' },
-					-- java = { 'google-java-format' },
-					c = { 'clang-format' },
-					cpp = { 'clang-format' },
-					rust = { 'rustfmt' },
-				},
-			})
-		end
-	},
-	{
-		'akinsho/toggleterm.nvim',
-		version = "*", -- Use for stability; omit to use `main` branch for the latest features
-		config = true,
-	},
+
+    { "preservim/nerdtree" },
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        dependencies = { { 'echasnovski/mini.icons', ops = {} } },
+        lazy = false,
+
+        config = function()
+            require('oil').setup {
+                default_file_explorer = true,
+                columns = {
+                    'icon',
+                },
+                keymaps = {
+                    ['<leader>o'] = { 'Oil' },
+                },
+            }
+        end,
+    },
+    {
+        "akinsho/toggleterm.nvim",
+        version = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = true,
+    },
+    
 }
