@@ -43,5 +43,17 @@ return {
                 transparent = false
             })
         end
-    } 
+    },
+    {
+        "rose-pine/neovim",
+        lazy = false,
+        priority = 1000,
+        name = "rose-pine",
+        opts = {},
+        config = function()
+            require("rose-pine").setup({
+                transparent = false
+            })
+        end
+    }
 }
