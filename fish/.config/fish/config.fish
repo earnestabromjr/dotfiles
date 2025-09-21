@@ -45,7 +45,7 @@ end
 
 # User paths
 set -e fish_user_paths
-set -U fish_user_paths $HOME/.bin $HOME/.local/bin $HOME/Applications $fish_user_paths
+set -U fish_user_paths $HOME/.bin $HOME/.local/bin $HOME/Applications $HOME/. $fish_user_paths
 
 # Starship prompt
 if command -sq starship
@@ -61,9 +61,9 @@ set TERM "xterm-256color"
 
 # Suppresses fish's intro message
 set fish_greeting
-#function fish_greeting
-#    fish_logo
-#end
+function fish_greeting
+   fish_logo
+end
 
 # Prevent directories names from being shortened
 set fish_prompt_pwd_dir_length 0
@@ -184,9 +184,9 @@ function less
     command less -R $argv
 end
 
-# function cd
-    # z $argv; and ls
-# end
+function cd
+    z $argv; and ls
+end
 
 ### ALIASES ###
 
@@ -303,5 +303,5 @@ end
 #   - the correct directories to the PATH
 #   - auto-completion for the opam binary
 # This section can be safely removed at any time if needed.
-test -r '/home/anakin/.opam/opam-init/init.fish' && source '/home/anakin/.opam/opam-init/init.fish' > /dev/null 2> /dev/null; or true
+# test -r '/home/anakin/.opam/opam-init/init.fish' && source '/home/anakin/.opam/opam-init/init.fish' > /dev/null 2> /dev/null; or true
 # END opam configuration

@@ -7,6 +7,9 @@ scripts=$config/scripts
 # notification daemon
 dunst &
 
+# Clipboard
+flatpak run com.github.hluk.copyq &
+
 # waybar
 $scripts/launch_waybar &
 $scripts/tools/dynamic &
@@ -17,9 +20,12 @@ $scripts/wall $config/wallpapers/cloud.png &
 # XDG
 $scripts/xdg-portal-hyprland &
 
+# Set cursor
+hyprctl setcursor Nordzy-cursors 24 &
+
 # effects
 $scripts/rgb &
 
 # other
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &

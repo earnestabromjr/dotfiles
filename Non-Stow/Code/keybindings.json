@@ -1,0 +1,70 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+a ctrl+c",
+    "command": "workbench.view.extension.codeium"
+  },
+  {
+    "key": "ctrl+k ctrl+b",
+    "command": "workbench.action.closeSidebar"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+a ctrl+q",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "composerMode.agent"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.previousPanelView",
+    "when": "panelFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.nextPanelView",
+    "when": "panelFocus"
+  },
+  // Navigate buffers
+  {
+    "key": "ctrl+m ctrl+m",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+m ctrl+n",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+space ctrl+r",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  }
+]
