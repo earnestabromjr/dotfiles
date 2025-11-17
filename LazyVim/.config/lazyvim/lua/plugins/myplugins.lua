@@ -24,7 +24,7 @@ return {
     },
   },
   {
-    "echasnovski/mini.surround",
+    "nvim-mini/mini.surround",
     version = false, -- Use the main branch
   },
 }
