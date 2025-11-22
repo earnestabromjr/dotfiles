@@ -32,11 +32,14 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-tokyo-night)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
+
+;; Line wrapping
+(global-visual-line-mode t)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -74,3 +77,190 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+;;
+;;
+;; Anakin prefrences
+;; Maintain terminal transparency in Doom Emacs
+(after! doom-themes
+  (unless (display-graphic-p)
+    (set-face-background 'default "undefined")))
+
+;; Modeline
+(setq doom-modeline-icon t)
+(setq doom-modeline-major-mode-icon t)
+(setq doom-modeline-lsp-icon t)
+(setq doom-modeline-major-mode-color-icon t)
+
+
+;; Speed of which-key popup
+(setq which-key-idle-delay 0.2)
+
+
+;; Identity config
+(setq user-full-name "Terry Abrom"
+      user-mail-address "abromearnest@gmail.com")
+
+;; Authentication
+(setq auth-sources '((:source "~/.authinfo.gpg")))
+
+;; (setq auth-sources '("~/.au"))
+
+;; Keychain
+;;
+
+;; Transparency
+(set-frame-parameter (selected-frame) 'alpha '(96 . 97))
+(add-to-list 'default-frame-alist '(alpha . (96 . 97)))
+
+
+;; Performance optimizations
+(setq gc-cons-threshold (* 256 1024 1024))
+(setq read-process-output-max (* 4 1024 1024))
+(setq comp-deferred-compilation t)
+(setq comp-async-jobs-number 8)
+
+;; Garbage collector optimization
+(setq gcmh-idle-delay 5)
+(setq gcmh-high-cons-threshold (* 1024 1024 1024))
+
+;; Version control optimization
+(setq vc-handled-backends '(Git))
+
+;; Fix x11 issues
+(setq x-no-window-manager t)
+(setq frame-inhibit-implied-resize t)
+(setq focus-follows-mouse nil)
+
+
+;; Completion from ***joshblais.com***
+
+;; Completion mechanisms
+;; (setq completing-read-function #'completing-read-default)
+;; (setq read-file-name-function #'read-file-name-default)
+;; Makes path completion more like find-file everywhere
+;; (setq read-file-name-completion-ignore-case t
+;;       read-buffer-completion-ignore-case t
+;;       completion-ignore-case t)
+;; Use the familiar C-x C-f interface for directory completion
+(map! :map minibuffer-mode-map
+      :when (featurep! :completion vertico)
+      "C-x C-f" #'find-file)
+
+;; Save minibuffer history - enables command history in M-x
+(use-package! savehist
+  :config
+  (setq savehist-file (concat doom-cache-dir "savehist")
+        savehist-save-minibuffer-history t
+        history-length 1000
+        history-delete-duplicates t
+        savehist-additional-variables '(search-ring
+                                        regexp-search-ring
+                                        extended-command-history))
+  (savehist-mode 1))
+
+(after! vertico
+  ;; Add file preview
+  (add-hook 'rfn-eshadow-update-overlay-hook #'vertico-directory-tidy)
+  (define-key vertico-map (kbd "DEL") #'vertico-directory-delete-char)
+  (define-key vertico-map (kbd "M-DEL") #'vertico-directory-delete-word)
+  ;; Make vertico use a more minimal display
+  (setq vertico-count 17
+        vertico-cycle t
+        vertico-resize t)
+  ;; Enable alternative filter methods
+  (setq vertico-sort-function #'vertico-sort-history-alpha)
+  ;; Quick actions keybindings
+  (define-key vertico-map (kbd "C-j") #'vertico-next)
+  (define-key vertico-map (kbd "C-k") #'vertico-previous)
+  (define-key vertico-map (kbd "M-RET") #'vertico-exit-input)
+
+  ;; History navigation
+  (define-key vertico-map (kbd "M-p") #'vertico-previous-history)
+  (define-key vertico-map (kbd "M-n") #'vertico-next-history)
+  (define-key vertico-map (kbd "C-r") #'consult-history)
+
+  ;; Configure orderless for better filtering
+  (setq completion-styles '(orderless basic)
+        completion-category-defaults nil
+        completion-category-overrides '((file (styles basic partial-completion orderless))))
+
+  ;; Customize orderless behavior
+  (setq orderless-component-separator #'orderless-escapable-split-on-space
+        orderless-matching-styles '(orderless-literal
+                                    orderless-prefixes
+                                    orderless-initialism
+                                    orderless-flex
+                                    orderless-regexp)))
+
+;; Quick command repetition
+(use-package! vertico-repeat
+  :after vertico
+  :config
+  (add-hook 'minibuffer-setup-hook #'vertico-repeat-save)
+  (map! :leader
+        (:prefix "r"
+         :desc "Repeat completion" "v" #'vertico-repeat)))
+
+;; TODO Not currently working
+;; Enhanced sorting and filtering with prescient
+;; (use-package! vertico-prescient
+;;   :after vertico
+;;   :config
+;;   (vertico-prescient-mode 1)
+;;   (prescient-persist-mode 1)
+;;   (setq prescient-sort-length-enable nil
+;;         prescient-filter-method '(literal regexp initialism fuzzy)))
+
+;; Enhanced marginalia annotations
+(after! marginalia
+  (setq marginalia-annotators '(marginalia-annotators-heavy marginalia-annotators-light nil))
+  ;; Show more details in marginalia
+  (setq marginalia-max-relative-age 0
+        marginalia-align 'right))
+
+;; Corrected Embark configuration
+(map! :leader
+      (:prefix ("k" . "embark")  ;; Using 'k' prefix instead of 'e' which conflicts with elfeed
+       :desc "Embark act" "a" #'embark-act
+       :desc "Embark dwim" "d" #'embark-dwim
+       :desc "Embark collect" "c" #'embark-collect))
+
+;; Configure consult for better previews
+(after! consult
+  (setq consult-preview-key "M-."
+        consult-ripgrep-args "rg --null --line-buffered --color=never --max-columns=1000 --path-separator /   --smart-case --no-heading --with-filename --line-number --search-zip"
+        consult-narrow-key "<"
+        consult-line-numbers-widen t
+        consult-async-min-input 2
+        consult-async-refresh-delay 0.15
+        consult-async-input-throttle 0.2
+        consult-async-input-debounce 0.1)
+
+  ;; More useful previews for different commands
+  (consult-customize
+   consult-theme consult-ripgrep consult-git-grep consult-grep
+   consult-bookmark consult-recent-file consult-xref
+   :preview-key '(:debounce 0.4 any)))
+
+;; Enhanced directory navigation
+(use-package! consult-dir
+  :bind
+  (("C-x C-d" . consult-dir)
+   :map vertico-map
+   ("C-x C-d" . consult-dir)
+   ("C-x C-j" . consult-dir-jump-file)))
+
+;; Add additional useful shortcuts
+(map! :leader
+      (:prefix "s"
+       :desc "Command history" "h" #'consult-history
+       :desc "Recent directories" "d" #'consult-dir))
+
+;; accept completion from copilot and fallback to company
+(use-package! copilot
+  :hook (prog-mode . copilot-mode)
+  :bind (:map copilot-completion-map
+              ("<tab>" . 'copilot-accept-completion)
+              ("TAB" . 'copilot-accept-completion)
+              ("C-TAB" . 'copilot-accept-completion-by-word)
+              ("C-<tab>" . 'copilot-accept-completion-by-word)))

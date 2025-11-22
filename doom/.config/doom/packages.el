@@ -52,3 +52,11 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
+
+
+;; Anakin installed packages
+
+;; Codeium
+;; (package! codeium :recipe (:host github :repo "Exafunction/codeium.el"))
+(package! copilot
+  :recipe (:host github :repo "copilot-emacs/copilot.el" :files ("*.el")))
