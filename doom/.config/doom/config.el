@@ -264,3 +264,8 @@
               ("TAB" . 'copilot-accept-completion)
               ("C-TAB" . 'copilot-accept-completion-by-word)
               ("C-<tab>" . 'copilot-accept-completion-by-word)))
+
+;; JavaScript/TypeScript development setup
+(add-hook 'javascript-mode-hook #'lsp)
+(add-hook 'javascript-mode-hook #'flycheck-mode)
+(add-hook 'javascript-mode-hook #'company-mode)

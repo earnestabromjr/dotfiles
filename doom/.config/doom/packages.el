@@ -60,3 +60,10 @@
 ;; (package! codeium :recipe (:host github :repo "Exafunction/codeium.el"))
 (package! copilot
   :recipe (:host github :repo "copilot-emacs/copilot.el" :files ("*.el")))
+
+(package! javascript)
+(package! tide)
+(package! js2-refactor)
+(package! flycheck)
+(package! company)
+(package! prettier-js)
