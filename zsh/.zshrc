@@ -1,3 +1,10 @@
+#     _                _    _       _     
+#   / \   _ __   __ _| | _(_)_ __ ( )___ 
+#  / _ \ | '_ \ / _` | |/ / | '_ \|// __|
+# / ___ \| | | | (_| |   <| | | | | \__ \
+#/_/   \_\_| |_|\__,_|_|\_\_|_| |_| |___/                             
+#
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -65,12 +72,28 @@ fi
 # Neovim Switcher
 # https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b
 #
-alias nvim-lazy="NVIM_APPNAME=lazyvim nvim"
-alias nvim-kick="NVIM_APPNAME=kickstart nvim"
-alias nvim-chad="NVIM_APPNAME=NvChad nvim"
-alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
+alias vl="NVIM_APPNAME=lazyvim nvim"
+alias vk="NVIM_APPNAME=kickstart nvim"
+alias vc="NVIM_APPNAME=NvChad nvim"
+alias va="NVIM_APPNAME=AstroNvim nvim"
+alias vv="nvim"
+alias vim="nvim"
 alias s="kitten ssh"
 alias f="fastfetch"
+
+alias flatse="flatpak search "
+alias flatin="flatpak install "
+
+# Pacman Aliases
+alias paci="sudo pacman -S"
+alias pacu="sudo pacman -Suy"
+alias pacr="sudo pacman -R"
+alias pacs="sudo pacman -Ss"
+
+alias yays="yay -Ss "
+alias yayi="yay -S "
+alias yayu="yay -Sy"
+alias update="yay -Suy; flatpak update"
 
 function nvims() {
   items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim")
@@ -85,12 +108,6 @@ function nvims() {
 }
 
 # bindkey "^[a "nvims\n""
-
-# Pacman Aliases
-alias paci="sudo pacman -S"
-alias pacu="sudo pacman -Suy"
-alias pacr="sudo pacman -R"
-alias pacs="sudo pacman -Ss"
 
 # Personal Aliases
 alias l.="ls -d .* --color=auto"
