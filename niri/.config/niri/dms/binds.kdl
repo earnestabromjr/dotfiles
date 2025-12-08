@@ -23,6 +23,8 @@ binds {
         spawn "dms" "ipc" "call" "dankdash" "wallpaper";
     }
 
+    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+
     Mod+Shift+N hotkey-overlay-title="Notepad" {
       spawn "dms" "ipc" "call" "notepad" "toggle";  
     }
