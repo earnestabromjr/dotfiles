@@ -279,7 +279,6 @@ spawn-at-startup "hypridle"
 spawn-sh-at-startup "dms run" // Starts dms shell
 
 prefer-no-csd // Disable program decorations
-// screenshot-path null // Disable screenshot saving
 // spawn-sh-at-startup "exec /usr/lib/polkit-1/polkit-agent-helper-1 &"
 // spawn-sh-at-startup "swaybg -m fill -i ~/Pictures/backgrounds/riot_01.jpg &"
 // spawn-sh-at-startup "$HOME/.local/share/archriot/install/archriot --startup-background"
@@ -297,20 +296,8 @@ hotkey-overlay {
 xwayland-satellite {
     path "/usr/bin/xwayland-satellite"
 }
-// Uncomment this line to ask the clients to omit their client-side decorations if possible.
-// If the client will specifically ask for CSD, the request will be honored.
-// Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
-// This option will also fix border/focus ring drawing behind some semitransparent windows.
-// After enabling or disabling this, you need to restart the apps for this to take effect.
-// prefer-no-csd
 
-// You can change the path where screenshots are saved.
-// A ~ at the front will be expanded to the home directory.
-// The path is formatted with strftime(3) to give you the screenshot date and time.
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
-// You can also set this to null to disable saving screenshots to disk.
-// screenshot-path null
 
 // Animation settings.
 // The wiki explains how to configure individual animations:
