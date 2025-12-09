@@ -276,6 +276,7 @@ spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
 spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
 spawn-sh-at-startup "swww img /usr/share/wallpapers/cachyos-wallpapers/Skyscraper.png" // Set wallpaper
 spawn-at-startup "hypridle"
+spawn-sh-at-startup "dms run" // Starts dms shell
 
 prefer-no-csd // Disable program decorations
 // screenshot-path null // Disable screenshot saving
