@@ -13,7 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="rgm" # set by `omz`
 
-plugins=(git aliases npm ubuntu systemadmin systemd fzf zoxide npm node themes ssh-agent tmux colorize zsh-interactive-cd)
+plugins=(git aliases npm ubuntu systemadmin systemd fzf zoxide npm node themes ssh-agent tmux colorize zsh-interactive-cd mise)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -195,3 +195,12 @@ function y() {
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
+
+# pnpm
+export PNPM_HOME="/home/terrya/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+eval "$(/usr/bin/mise activate zsh)"
