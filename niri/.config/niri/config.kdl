@@ -403,6 +403,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+Return hotkey-overlay-title="Open Kitty" { spawn "kitty"; }
+    Mod+Slash hotkey-overlay-title="Open Wezterm" { spawn "wezterm"; }
     // Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
 
     // Vader binds
