@@ -36,7 +36,8 @@ export ARCHFLAGS="-arch x86_64"
 export PATH=$PATH:~/.scripts/bin
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 export EDITOR="nvim"
-export VISUAL="code"
+export VISUAL="nvim"
+export MANPAGER="nvim +Man!"
 
 # if [ -e /home/nesto/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nesto/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
@@ -182,6 +183,9 @@ alias top="btop"
 
 alias df="df -H"
 alias du="du -ch"
+
+# Xonsh
+  alias xonsh="$HOME/.xonsh-env/bin/xonsh"
 
 # Functions
 function y() {
