@@ -96,6 +96,13 @@ alias yayi="yay -S "
 alias yayu="yay -Sy"
 alias update="yay -Suy; flatpak update"
 
+# Fedora Aliases
+alias dnf="sudo dnf"
+alias dnfu="sudo dnf update"
+alias dnfse="dnf search "
+alias dnfi="dnf install "
+alias dnfr="dnf remove "
+
 function nvims() {
   items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
@@ -208,3 +215,4 @@ case ":$PATH:" in
 esac
 # pnpm end
 eval "$(/usr/bin/mise activate zsh)"
+eval "$(mise activate zsh)"

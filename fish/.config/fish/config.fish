@@ -305,3 +305,4 @@ end
 # This section can be safely removed at any time if needed.
 # test -r '/home/anakin/.opam/opam-init/init.fish' && source '/home/anakin/.opam/opam-init/init.fish' > /dev/null 2> /dev/null; or true
 # END opam configuration
+mise activate fish | source
