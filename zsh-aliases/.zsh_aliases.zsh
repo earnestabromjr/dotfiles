@@ -12,12 +12,16 @@
 alias ls="eza --icons"
 alias f="fastfetch"
 
+## Neovim
 alias vl="NVIM_APPNAME=lazyvim nvim"
 alias vk="NVIM_APPNAME=kickstart nvim"
 alias vc="NVIM_APPNAME=NvChad nvim"
 alias va="NVIM_APPNAME=AstroNvim nvim"
 alias vv="nvim"
 alias vim="nvim"
+
+# Doom Emacs
+alias de="doom emacs"
 alias s="kitten ssh"
 alias f="fastfetch"
 
