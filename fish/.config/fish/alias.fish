@@ -7,3 +7,9 @@ alias gc="git commit -m"
 alias search="paru -Ss"
 alias install="paru -S"
 alias up="paru -Sy"
+
+## Functions
+function mkcd
+    mkdir -p $argv
+    and cd $argv
+end

@@ -1,8 +1,13 @@
 -- Anakins Keymaps
 
 -- Keymaps to navigate buffers
+<<<<<<< Updated upstream
 vim.keymap.set('n', '<space>bb', '<Cmd>bp<CR>', { silent = true })
 vim.keymap.set('n', '<space>bn', '<Cmd>bn<CR>', { silent = true })
+=======
+vim.keymap.set('n', '<Shift>h', '<Cmd>bp<CR>', { silent = true })
+vim.keymap.set('n', '<Shift>l', '<Cmd>bn<CR>', { silent = true })
+>>>>>>> Stashed changes
 vim.keymap.set('n', '<leader>bl', '<Cmd>ls<CR>', { silent = true })
 vim.keymap.set('n', '<leader>bd', '<Cmd>bd<CR>', { silent = true })
 
@@ -13,10 +18,21 @@ vim.keymap.set('n', '<leader>o', '<Cmd>Oil<CR>', { desc = 'Oil' })
 vim.keymap.set('i', 'jk', '<Esc>', { silent = true })
 vim.keymap.set('v', 'jk', '<Esc>', { silent = true })
 -- Keymap to launch neotree
+<<<<<<< Updated upstream
 vim.keymap.set('n', '<leader>e', '<Cmd>Neotree position=right<CR>', { desc = 'Toggle neoTree' })
 vim.keymap.set('n', '<leader>eb', '<Cmd>Neotree toggle show buffers left<CR>', { desc = 'Toggle neoTree buffer list' })
 -- NerdTree
 vim.keymap.set({ 'n', 'i' }, '<C-t>', '<Cmd>NERDTreeToggle<CR>', { desc = 'Toggle NerdTree' })
+=======
+vim.keymap.set('n', '<leader>e', '<Cmd>Neotree position=right<CR>', { des = 'Neo Tree' })
+vim.keymap.set('n', '<leader>fb', '<Cmd>Neotree toggle show buffers left<CR>', { silent = true })
+-- NerdTree
+vim.keymap.set({ 'n', 'i' }, '<C-t>', '<Cmd>NERDTreeToggle<CR>', { desc = 'Toggle NerdTree' })
+
+--Keymaps to navigate windows
+vim.keymap.set('n', '<leader>j', '<C-w>w', { silent = true })
+vim.keymap.set('n', '<leader>k', '<C-w>p', { silent = true })
+>>>>>>> Stashed changes
 
 --Keymaps to resize windows
 
