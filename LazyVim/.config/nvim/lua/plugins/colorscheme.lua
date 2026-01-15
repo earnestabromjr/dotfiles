@@ -55,5 +55,11 @@ return {
                 transparent = false
             })
         end
+    },
+    {
+        "ellisonleao/gruvbox.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
     }
 }

@@ -3,6 +3,10 @@ alias gst="git status"
 alias ga="git add"
 alias gc="git commit -m"
 
+# Neovim
+alias vim="nvim"
+alias vi="nvim"
+
 ## Arch based aliases
 alias search="paru -Ss"
 alias install="paru -S"
