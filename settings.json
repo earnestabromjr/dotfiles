@@ -1,0 +1,66 @@
+{
+  "keyboard.dispatch": "keyCode",
+  "editor.fontFamily": "'FiraCode Nerd Font', 'JetBrains Mono', monospace",
+  "editor.fontSize": 14,
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.colorCustomizations": {},
+  "remote.SSH.remotePlatform": {
+    "*.gitpod.io": "linux"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "mads-hartmann.bash-ide-vscode"
+  },
+  "workbench.colorTheme": "SLab Bearded Theme Monokai Metallian",
+  "direnv.path.executable": "/usr/bin/direnv",
+  "vim.useCtrlKeys": false,
+  "git.enableSmartCommit": true,
+  "cSpell.userWords": ["ifaddresses", "matugen", "wallust"],
+  "files.autoSave": "afterDelay",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.handleKeys": {
+    "<C-b>": false,
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-n": true
+  },
+  "codeium.enableConfig": {
+    "*": true,
+    "properties": true,
+    "javascript": false,
+    "ansible": true
+  },
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font','JetBrainsMonoNL Nerd Font'",
+  "editor.fontLigatures": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "dev.containers.dockerPath": "/home/anakin/.local/bin/podman-host",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "codeium.disableSupercomplete": true,
+  "explorer.compactFolders": false,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-linux": "/home/anakin/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.kubectl-path-linux": "/home/anakin/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path-linux": "/home/anakin/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "git.autofetch": true,
+  "ansible.lightspeed.enabled": false,
+  "ansible.lightspeed.suggestions.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "notebook.formatOnSave.enabled": true,
+  "pylint.severity": {
+    "C0114": "Hint",
+    "C0115": "Hint",
+    "C0116": "Hint",
+    "C0303": "Hint"
+  },
+  "python.defaultInterpreterPath": "/bin/python",
+  "editor.linkedEditing": true,
+  "workbench.iconTheme": "fira-code-material-minimal"
+}

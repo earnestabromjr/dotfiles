@@ -1,4 +1,4 @@
-local filetype = require "mason-lspconfig.mappings.filetype"
+-- local filetype = require "mason-lspconfig.mappings.filetype"
 return {
 	'akinsho/bufferline.nvim',
 	version = "*",

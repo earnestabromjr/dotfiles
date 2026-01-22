@@ -1,0 +1,1 @@
+../dotfiles/hypr/scripts/nmtui-launch.sh

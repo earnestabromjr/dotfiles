@@ -1,3 +1,4 @@
+source /usr/share/cachyos-fish-config/cachyos-config.fish
 ###
 # https://fishshell.com/docs/current/index.html
 # https://github.com/jorgebucaran/cookbook.fish
@@ -18,7 +19,7 @@
 #set VIRTUAL_ENV_DISABLE_PROMPT "1"
 
 if not status --is-interactive
-  exit
+    exit
 end
 
 # Load private config
@@ -57,7 +58,7 @@ set -x EDITOR nvim
 set -x VISUAL nvim
 #set -x TERM alacritty
 # Sets the terminal type for proper colors
-set TERM "xterm-256color"
+set TERM xterm-256color
 
 # Suppresses fish's intro message
 set fish_greeting
@@ -70,9 +71,8 @@ set fish_prompt_pwd_dir_length 0
 set -x FZF_DEFAULT_OPTS "--color=16,header:13,info:5,pointer:3,marker:9,spinner:1,prompt:5,fg:7,hl:14,fg+:3,hl+:9 --inline-info --tiebreak=end,length --bind=shift-tab:toggle-down,tab:toggle-up"
 # "bat" as manpager
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
-set -x MANROFFOPT "-c"
+set -x MANROFFOPT -c
 set -g theme_nerd_fonts yes
-
 
 if status --is-login
     set -gx PATH $PATH ~/.bin
@@ -87,11 +87,11 @@ if type -q bat
 end
 
 if command -sq fzf && type -q fzf_configure_bindings
-  fzf_configure_bindings --directory=\ct
+    fzf_configure_bindings --directory=\ct
 end
 
 if not set -q -g fish_user_abbreviations
-  set -gx fish_user_abbreviations
+    set -gx fish_user_abbreviations
 end
 
 #if type -f fortune >/dev/null
@@ -104,19 +104,29 @@ end
 #end
 
 if test tree >/dev/null
-    function l1;  tree --dirsfirst -ChFL 1 $argv; end
-    function l2;  tree --dirsfirst -ChFL 2 $argv; end
-    function l3;  tree --dirsfirst -ChFL 3 $argv; end
-    function ll1; tree --dirsfirst -ChFupDaL 1 $argv; end
-    function ll2; tree --dirsfirst -ChFupDaL 2 $argv; end
-    function ll3; tree --dirsfirst -ChFupDaL 3 $argv; end
+    function l1
+        tree --dirsfirst -ChFL 1 $argv
+    end
+    function l2
+        tree --dirsfirst -ChFL 2 $argv
+    end
+    function l3
+        tree --dirsfirst -ChFL 3 $argv
+    end
+    function ll1
+        tree --dirsfirst -ChFupDaL 1 $argv
+    end
+    function ll2
+        tree --dirsfirst -ChFupDaL 2 $argv
+    end
+    function ll3
+        tree --dirsfirst -ChFupDaL 3 $argv
+    end
 end
 
 if type -q direnv
     eval (direnv hook fish)
 end
-
-
 
 ### FUNCTIONS ###
 # Fish command history
@@ -175,9 +185,9 @@ function ex --description "Extract bundled & compressed files"
             case '*'
                 echo "'$argv[1]' cannot be extracted via ex"
         end
-   else
-       echo "'$argv[1]' is not a valid file"
-   end
+    else
+        echo "'$argv[1]' is not a valid file"
+    end
 end
 
 function less
@@ -185,7 +195,7 @@ function less
 end
 
 # function cd
-    # z $argv; and ls
+# z $argv; and ls
 # end
 
 ### ALIASES ###
@@ -252,10 +262,11 @@ alias mkdir="mkdir -p"
 
 # Neovim aliases
 alias v="nvim" # default neovim config
-alias vz="NVIM_APPNAME=LazyVim nvim" #LazyVim
+alias vz="NVIM_APPNAME=lazyvim nvim" #LazyVim
 alias vc="NVIM_APPNAME=NvChad nvim" # NvChad
 alias vk="NVIM_APPNAME=kickstart nvim" # Kickstart
 alias va="NVIM_APPNAME=AstroNvim nvim" # AstroVim
+alias vv="NVIM_APPNAME=nvim-new nvim" # Vim
 
 # fastfetch
 
@@ -292,7 +303,17 @@ set fish_pager_color_progress brwhite --background=cyan
 set fish_color_search_match --background="#60AEFF"
 
 if status is-interactive
-	if type -q atuin
-		atuin init fish | source
-	end
+    if type -q atuin
+        atuin init fish | source
+    end
 end
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+# test -r '/home/anakin/.opam/opam-init/init.fish' && source '/home/anakin/.opam/opam-init/init.fish' > /dev/null 2> /dev/null; or true
+# END opam configuration
+mise activate fish | source
+zoxide init fish | source

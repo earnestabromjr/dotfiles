@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+xhost +SI:localuser:$USER
+/usr/bin/distrobox-enter -T -n mint-box -- "xfce.desktop"

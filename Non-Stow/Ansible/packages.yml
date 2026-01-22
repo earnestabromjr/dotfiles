@@ -1,0 +1,37 @@
+---
+- name: Packages
+  hosts: ubuntu
+  become: true
+  tasks:
+    - name: Check OS Family
+      debug:
+        msg: "This is a {{ ansible_os_family }} system."
+    - name: Install base packages
+      apt:
+        update_cache: true
+        state: latest
+        name:
+          - git
+          - vim
+          - curl
+          - wget
+          - net-tools
+          - iputils-ping
+          - dnsutils
+          - ripgrep
+          - tmux
+          - neovim
+          - fd-find
+          - fzf
+          - build-essential
+          - cmake
+          - zsh
+          - nodejs
+          - npm
+          - golang
+          - rustc
+          - cargo
+          - unzip
+          - bat
+          - postgresql
+          - postgresql-client
