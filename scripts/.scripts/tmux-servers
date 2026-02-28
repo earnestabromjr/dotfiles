@@ -1,0 +1,27 @@
+#!/bin/bash
+
+SESSION="main"
+
+tmux new-session -d -s "$SESSION" -n "pve1"
+tmux send-keys -t "$SESSION:pve1" "ssh pve1" C-m
+
+tmux new-window -t "$SESSION" -n "pve2"
+tmux send-keys -t "$SESSION:pve2" "ssh pve2" C-m
+
+tmux new-window -t "$SESSION" -n "pbs"
+tmux send-keys -t "$SESSION:pbs" "ssh pbs" C-m
+
+tmux new-window -t "$SESSION" -n "docker-host"
+tmux send-keys -t "$SESSION:docker-host" "ssh docker-host" C-m
+
+tmux new-window -t "$SESSION" -n "monitor"
+
+tmux split-window -v -t "$SESSION:monitor"
+tmux select-layout -t "$SESSION:monitor" even-vertical
+tmux send-keys -t "$SESSION:monitor.0" "btop" C-m
+tmux select-pane -t "$SESSION:monitor.1"
+
+tmux split-window -h -t "$SESSION:monitor"
+tmux select-pane -t "$SESSION:monitor.0"
+
+tmux attach-session -t "$SESSION"
