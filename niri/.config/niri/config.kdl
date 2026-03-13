@@ -411,6 +411,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open Kitty" { spawn "kitty"; }
     Mod+Slash hotkey-overlay-title="Open Foot" { spawn "footclient"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Alt+W hotkey-overlay-title="Open Thorium Web Browser" { spawn "thorium-browser"; }
     // Function key launchers
     Mod+F1 hotkey-overlay-title="Open Zen Browser" { spawn "zen-browser"; }
     Mod+F2 hotkey-overlay-title="Open Cursor" { spawn "cursor"; }

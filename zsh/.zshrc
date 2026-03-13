@@ -11,7 +11,7 @@ export PATH=$HOME/bin:/usr/local/bin:$HOME/.scripts/:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="rgm" # set by `omz`
+ZSH_THEME="theunraveler" # set by `omz`
 
 plugins=(git aliases npm ubuntu systemadmin systemd fzf zoxide npm node themes ssh-agent tmux colorize zsh-interactive-cd mise)
 
