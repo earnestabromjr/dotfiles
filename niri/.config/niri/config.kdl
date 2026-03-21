@@ -418,15 +418,15 @@ binds {
     MOD+F3 hotkey-overlay-title="Open Network TUI" { spawn-sh "footclient -e nmtui"; }
     Mod+F4 hotkey-overlay-title="Open Octopi Package Manager" { spawn "octopi"; }
     Mod+F5 hotkey-overlay-title="Open filezilla" { spawn "filezilla"; }
+    Mod+F6 hotkey-overlay-title="Open Firefox" { spawn "firefox"; }
 
     // Binds for applications I use often enough to warrant a dedicated hotkey.
     Mod+Ctrl+F1 hotkey-overlay-title="Open niri config" { spawn-sh "footclient -e nvim ~/.config/niri/config.kdl"; }
     Mod+Ctrl+F2 hotkey-overlay-title="Open ssh config" { spawn-sh "footclient -e nvim ~/.ssh/config"; }
     Mod+Ctrl+F3 hotkey-overlay-title="Open tmux new session" { spawn-sh "footclient -e tmux new-session"; }
+    Mod+Ctrl+F4 hotkey-overlay-title="Open opencode in tmux new session" { spawn-sh "footclient -e tmux new-session 'opencode'"; }
+    Mod+Ctrl+F5 hotkey-overlay-title="Open zsh config in tmux new session" { spawn-sh "footclient -e tmux new-session 'nvim ~/.zshrc'"; }
 
-
-
-    // Vader binds
     // Mod+Space { spawn-sh "rofi -show drun"; }
     Mod+Alt+V hotkey-overlay-title="Open Browser: Vivaldi" { spawn-sh "flatpak run com.vivaldi.Vivaldi"; }
     Mod+Ctrl+T hotkey-overlay-title="System Info" { spawn-sh "ghostty -e btop"; }
