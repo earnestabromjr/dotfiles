@@ -1,4 +1,3 @@
-source /usr/share/cachyos-fish-config/cachyos-config.fish
 ###
 # https://fishshell.com/docs/current/index.html
 # https://github.com/jorgebucaran/cookbook.fish
