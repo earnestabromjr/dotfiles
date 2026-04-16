@@ -1,0 +1,10 @@
+NVIM v0.12.1
+Build type: RelWithDebInfo
+LuaJIT 2.1.1737090214
+Vim versions: 8.1, 8.2, 9.0, 9.1, 9.2
+Compilation: /usr/local/bin/cc -O2 -g -DRELDEBUG -flto=auto -fno-fat-lto-objects -Wall -Wextra -pedantic -Wno-unused-parameter -Wstrict-prototypes -std=gnu99 -Wshadow -Wconversion -Wvla -Wdouble-promotion -Wmissing-noreturn -Wmissing-format-attribute -Wmissing-prototypes -Wno-unused-function -fsigned-char -fstack-protector-strong -Wno-conversion -fno-common -Wno-unused-result -Wimplicit-fallthrough -fdiagnostics-color=always -Wno-free-nonheap-object -DHAVE_UNIBILIUM -DUNIT_TESTING -D_GNU_SOURCE -DUTF8PROC_STATIC -I/usr/include/luajit-2.1 -I/usr/include -I/home/build/output/src/nvim/auto -I/home/build/output/include -I/home/build/output/cmake.config -I/home/build/src 
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/usr/share/nvim"
+
+Run :checkhealth for more info
