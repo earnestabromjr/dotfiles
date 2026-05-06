@@ -101,8 +101,8 @@ vim.g.autoformat = true
 vim.g.trouble_lualine = true
 
 opt.fillchars = {
-	foldopen = "",
-	foldclose = "",
+	foldopen = " ",
+	foldclose = " ",
 	fold = " ",
 	foldsep = " ",
 	diff = "╱",
