@@ -1,21 +1,32 @@
 //-*- mode: jsonc -*-
 {
-    "layer": "top", 
-    "position": "top", 
-    "height": 30, 
-    "spacing": 4, 
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
 
-    // Choose the order of the modules
     "modules-left": [
         "ext/workspaces",
         "custom/sep",
-        "ext/window",
-        "custom/sep"
+        "dwl/window",
+        "custom/sep",
+        "custom/dms-launcher"
     ],
+
     "modules-center": [
+        "clock"
     ],
 
     "modules-right": [
+        "custom/dms-audio",
+        "custom/sep",
+        "custom/dms-notifications",
+        "custom/sep",
+        "custom/dms-night",
         "custom/sep",
         "network",
         "custom/sep",
@@ -25,66 +36,127 @@
         "custom/sep",
         "disk",
         "custom/sep",
-        "clock",
+        "battery",
         "custom/sep",
-        "tray"
+        "tray",
+        "custom/sep",
+        "custom/dms-powermenu"
     ],
 
-    // Modules configuration
+    // === Mango WM Workspaces (Tags) ===
     "ext/workspaces": {
-        "disable-scroll": true,
+        "format": "{icon}",
+        "icon-size": 16,
+        "icon-theme": "gtk",
         "all-outputs": true,
-        "warp-on-scroll": false,
-        "format": "{name}",
+        "on-click": "activate",
+        "on-click-right": "deactivate",
+        "sort-by-id": true,
+        "ignore-hidden": true,
         "persistent-workspaces": {
-            "*" : 9
+            "*": 9
         }
     },
-    "ext/window" : {
-        "max-length": 40,
-        "seperate-outputs": false
+
+    // === Mango WM Window Info ===
+    "dwl/window": {
+        "format": "[{layout}] {title}",
+        "max-length": 50,
+        "separate-outputs": false
     },
+
+    // === DMS Integration Modules ===
+    "custom/dms-launcher": {
+        "format": "",
+        "on-click": "dms ipc call launcher toggle",
+        "tooltip": "Open launcher"
+    },
+
+    "custom/dms-audio": {
+        "exec": "$HOME/.config/mango/scripts/dms-audio.sh",
+        "on-click": "dms ipc call audio mute",
+        "on-scroll-up": "dms ipc call audio increment 5",
+        "on-scroll-down": "dms ipc call audio decrement 5",
+        "interval": 2,
+        "return-type": "json",
+        "signal": 1
+    },
+
+    "custom/dms-notifications": {
+        "exec": "$HOME/.config/mango/scripts/dms-notifications.sh",
+        "on-click": "dms ipc call notifications toggleDoNotDisturb",
+        "interval": 10,
+        "return-type": "json",
+        "signal": 2
+    },
+
+    "custom/dms-night": {
+        "exec": "$HOME/.config/mango/scripts/dms-night.sh",
+        "on-click": "dms ipc call night toggle",
+        "interval": 30,
+        "return-type": "json",
+        "signal": 3
+    },
+
+    "custom/dms-powermenu": {
+        "format": "⏻",
+        "on-click": "dms ipc call powermenu toggle",
+        "tooltip": "Power menu"
+    },
+
+    // === Built-in Modules ===
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
-        // "icons": {
-        //   "blueman": "bluetooth",
-        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-        // }
     },
+
     "clock": {
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%H:%M} ",
+        "format-alt": "{:%Y-%m-%d (%a) %H:%M}",
+        "tooltip-format": "{:%A, %B %d, %Y}\n{:%H:%M:%S}",
+        "interval": 30
     },
+
     "cpu": {
-        "format": "CPU: {usage}%",
+        "format": " {usage}%",
         "tooltip": false
     },
+
     "memory": {
-        "format": "Mem: {used}GiB"
+        "format": " {used}GiB",
+        "tooltip": true
     },
+
     "disk": {
         "interval": 60,
         "path": "/",
-        "format": "Disk: {free}"
+        "format": " {free}"
     },
+
     "battery": {
         "states": {
             "good": 95,
             "warning": 30,
             "critical": 15
         },
-        "format": "Bat: {capacity}% {icon} {time}",
+        "format": "{capacity}% {icon}",
         "format-plugged": "{capacity}% ",
-        "format-alt": "Bat {capacity}%",
+        "format-alt": "{capacity}%",
         "format-time": "{H}:{M}",
         "format-icons": ["", "", "", "", ""]
     },
+
     "network": {
-        "format": "Online",
-        "format-disconnected": "Disconnected ⚠"
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": " {ipaddr}",
+        "format-disconnected": " ",
+        "tooltip-format-wifi": "{essid}\n{ipaddr}\n{signalStrength}%",
+        "tooltip-format-ethernet": "{ipaddr}",
+        "tooltip-format-disconnected": "Disconnected",
+        "interval": 30
     },
+
     "custom/sep": {
-        "format" : "|",
-        "interval" : 0
+        "format": "|",
+        "interval": 0
     }
 }

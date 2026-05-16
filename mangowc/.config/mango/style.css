@@ -1,55 +1,156 @@
-@define-color bg    #1a1b26; 
-@define-color fg    #a9b1d6; 
-@define-color blk   #32344a; 
-@define-color red   #f7768e; 
-@define-color grn   #9ece6a; 
-@define-color ylw   #e0af68; 
-@define-color blu   #7aa2f7; 
-@define-color mag   #ad8ee6; 
-@define-color cyn   #0db9d7; 
-@define-color brblk #444b6a; 
-@define-color white #ffffff; 
+@define-color bg      #1a1b26;
+@define-color bg2     #24253a;
+@define-color fg      #a9b1d6;
+@define-color fg2     #c0caf5;
+@define-color blk     #32344a;
+@define-color brblk   #444b6a;
+@define-color red     #f7768e;
+@define-color grn     #9ece6a;
+@define-color ylw     #e0af68;
+@define-color blu     #7aa2f7;
+@define-color mag     #ad8ee6;
+@define-color cyn     #0db9d7;
+@define-color white   #ffffff;
+@define-color pink    #bb9af7;
 
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 0;
 }
 
 window#waybar {
     background-color: @bg;
     color: @fg;
+    border-bottom: 2px solid @blk;
+    transition: background-color 0.2s ease;
+}
+
+/* ---- Mango Tags (ext/workspaces) ---- */
+#workspaces {
+    padding: 0 4px;
 }
 
 #workspaces button {
-    padding: 0 6px;
-    color: @cyn;
+    padding: 0 8px;
+    color: @brblk;
     background: transparent;
-    border-bottom: 3px solid @bg;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    transition: all 0.15s ease;
+    font-size: 13px;
 }
-#workspaces button.active {
-    color: @cyn;
-    border-bottom: 3px solid @mag;
+
+#workspaces button.hidden {
+    color: @blk;
 }
+
+#workspaces button.visible {
+    color: @fg2;
+}
+
 #workspaces button.empty {
-    color: @white;
+    color: @blk;
 }
-#workspaces button.empty.active {
+
+#workspaces button.occupied {
     color: @cyn;
+}
+
+#workspaces button.active {
+    color: @white;
     border-bottom: 3px solid @mag;
 }
 
 #workspaces button.urgent {
     background-color: @red;
+    color: @bg;
 }
 
-button:hover {
+#workspaces button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -3px @white;
+    text-shadow: inherit;
 }
 
+/* ---- Mango Window Info (dwl/window) ---- */
+#window {
+    padding: 0 8px;
+    color: @fg2;
+}
+
+/* ---- DMS Launcher ---- */
+#custom-dms-launcher {
+    padding: 0 10px;
+    color: @pink;
+    font-size: 18px;
+}
+
+#custom-dms-launcher:hover {
+    color: @white;
+}
+
+/* ---- DMS Audio ---- */
+#custom-dms-audio {
+    padding: 0 8px;
+    color: @blu;
+}
+
+#custom-dms-audio.muted {
+    color: @red;
+}
+
+#custom-dms-audio.low {
+    color: @ylw;
+}
+
+#custom-dms-audio.medium {
+    color: @blu;
+}
+
+#custom-dms-audio.high {
+    color: @grn;
+}
+
+/* ---- DMS Notifications ---- */
+#custom-dms-notifications {
+    padding: 0 8px;
+    color: @fg;
+}
+
+#custom-dms-notifications.dnd {
+    color: @red;
+}
+
+/* ---- DMS Night Light ---- */
+#custom-dms-night {
+    padding: 0 8px;
+}
+
+#custom-dms-night.enabled {
+    color: @ylw;
+}
+
+#custom-dms-night.disabled {
+    color: @brblk;
+}
+
+/* ---- DMS Power Menu ---- */
+#custom-dms-powermenu {
+    padding: 0 10px;
+    color: @red;
+    font-size: 18px;
+}
+
+#custom-dms-powermenu:hover {
+    color: @white;
+    background-color: @red;
+    border-radius: 4px;
+}
+
+/* ---- Status Modules ---- */
 #clock,
-#custom-sep,
 #battery,
 #cpu,
 #memory,
@@ -61,44 +162,100 @@ button:hover {
 }
 
 #custom-sep {
+    padding: 0 2px;
     color: @brblk;
+    font-weight: bold;
 }
 
+/* ---- Clock ---- */
 #clock {
     color: @cyn;
-    border-bottom: 4px solid @cyn;
+    border-bottom: 3px solid @cyn;
+    padding: 0 12px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
+/* ---- Battery ---- */
 #battery {
     color: @mag;
-    border-bottom: 4px solid @mag;
+    border-bottom: 3px solid @mag;
 }
 
+#battery.warning {
+    color: @ylw;
+    border-bottom-color: @ylw;
+}
+
+#battery.critical {
+    color: @red;
+    border-bottom-color: @red;
+}
+
+#battery.good {
+    color: @grn;
+    border-bottom-color: @grn;
+}
+
+/* ---- Disk ---- */
 #disk {
     color: @ylw;
-    border-bottom: 4px solid @ylw;
+    border-bottom: 3px solid @ylw;
 }
 
+/* ---- Memory ---- */
 #memory {
     color: @mag;
-    border-bottom: 4px solid @mag;
+    border-bottom: 3px solid @mag;
 }
 
+/* ---- CPU ---- */
 #cpu {
     color: @grn;
-    border-bottom: 4px solid @grn;
+    border-bottom: 3px solid @grn;
 }
 
+/* ---- Network ---- */
 #network {
     color: @blu;
-    border-bottom: 4px solid @blu;
+    border-bottom: 3px solid @blu;
 }
 
 #network.disconnected {
+    color: @red;
+    border-bottom-color: @red;
+}
+
+#network.disabled {
+    color: @brblk;
+    border-bottom-color: @brblk;
+}
+
+/* ---- Tray ---- */
+#tray {
+    background-color: @bg2;
+    border-radius: 4px;
+    padding: 0 6px;
+    margin: 2px 0;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
     background-color: @red;
 }
 
-#tray {
-    background-color: #2980b9;
+/* ---- Tooltips ---- */
+tooltip {
+    background: @bg;
+    border: 1px solid @brblk;
+    border-radius: 4px;
 }
 
+tooltip label {
+    color: @fg;
+    font-size: 13px;
+}
