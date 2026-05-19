@@ -397,9 +397,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: Kitty" { spawn "kitty"; }
-    Mod+Return hotkey-overlay-title="Open Ghostty" { spawn "ghostty"; }
-    // Mod+Slash hotkey-overlay-title="Open Wezterm" { spawn "wezterm"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: Ghostty" { spawn "ghostty"; }
+    Mod+Return hotkey-overlay-title="Open Kitty" { spawn "kitty"; }
+    Mod+Slash hotkey-overlay-title="Open Wezterm" { spawn "wezterm"; }
     // Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
 
     // Vader binds
@@ -690,7 +690,3 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
-
-include "dms/outputs.kdl"
-
-include "dms/cursor.kdl"
