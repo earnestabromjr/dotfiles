@@ -214,5 +214,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-eval "$(/usr/bin/mise activate zsh)"
 eval "$(mise activate zsh)"
