@@ -1,12 +1,12 @@
-#     _                _    _       _     
-#   / \   _ __   __ _| | _(_)_ __ ( )___ 
+#     _                _    _       _
+#   / \   _ __   __ _| | _(_)_ __ ( )___
 #  / _ \ | '_ \ / _` | |/ / | '_ \|// __|
 # / ___ \| | | | (_| |   <| | | | | \__ \
-#/_/   \_\_| |_|\__,_|_|\_\_|_| |_| |___/                             
+#/_/   \_\_| |_|\__,_|_|\_\_|_| |_| |___/
 #
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -41,7 +41,7 @@ export MANPAGER="nvim +Man!"
 
 # if [ -e /home/nesto/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nesto/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
-# Antigen 
+# Antigen
 source $HOME/antigen.zsh
 
 antigen use oh-my-zsh
@@ -102,6 +102,31 @@ alias dnfu="sudo dnf update"
 alias dnfse="dnf search "
 alias dnfi="dnf install "
 alias dnfr="dnf remove "
+
+# Pikaos Aliases
+alias pks="pikman search "
+alias pki="pikman install "
+alias pkr="pikman remove "
+alias pku="pikman update "
+
+#search content with ripgrep
+alias rg="rg --sort path"
+
+#get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+alias nb="$EDITOR ~/.bashrc"
+alias nz="$EDITOR ~/.zshrc"
+alias nf="$EDITOR ~/.config/fish/config.fish"
+alias nfastfetch="$EDITOR ~/.config/fastfetch/config.jsonc"
+
+#give the list of all installed desktops - xsessions desktops
+alias xd="ls /usr/share/xsessions"
+alias xdw="ls /usr/share/wayland-sessions"
+
+#give a list of the kernels installed
+alias kernel="ls /usr/lib/modules"
+alias kernels="ls /usr/lib/modules"
 
 function nvims() {
   items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim")
