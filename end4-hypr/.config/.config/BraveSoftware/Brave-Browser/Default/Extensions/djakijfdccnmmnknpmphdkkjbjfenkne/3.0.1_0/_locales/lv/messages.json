@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Mēs nevaram piekļūt jūsu Google lietotājvārdam vai parolei.\u003C/p>\u003Cp> Lietotne no Google saņem tikai marķieri, lai mēs varētu ievietot fotoattēlus jūsu Google fotoattēlos.\u003C/p>\u003Cp> Tokens tiek saglabāts pārlūkprogrammā un mums nekad netiek nosūtīts.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Pieslēgšanās neizdevās"
+   },
+   "LoginPrompt": {
+      "message": "Lai augšupielādētu fotoattēlus, jums ir jāpiesakās pakalpojumā Google fotoattēli"
+   },
+   "LoginSuccessful": {
+      "message": "Jūs esat veiksmīgi pieteicies! Tagad varat saglabāt fotoattēlus pakalpojumā Google fotoattēli."
+   },
+   "Popup_Instruction": {
+      "message": "Vienkārši ar peles labo pogu noklikšķiniet uz jebkura attēla un izvēlieties &quot;Saglabāt pakalpojumā Google fotoattēli&quot;."
+   },
+   "RateUs": {
+      "message": "Lūdzu, novērtējiet mūs"
+   },
+   "SaveFailed": {
+      "message": "Saglabājot attēlu pakalpojumā Google fotoattēli, radās problēma"
+   },
+   "SaveSuccessful": {
+      "message": "Attēls saglabāts pakalpojumā Google fotoattēli!"
+   },
+   "SaveToMenu": {
+      "message": "Saglabāt pakalpojumā Google fotoattēli"
+   },
+   "TryAgain": {
+      "message": "Mēģini vēlreiz"
+   }
+}

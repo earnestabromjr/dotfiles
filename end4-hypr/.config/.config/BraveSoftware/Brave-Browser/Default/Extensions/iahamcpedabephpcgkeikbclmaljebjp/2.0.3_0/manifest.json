@@ -1,0 +1,42 @@
+{
+   "author": "Toptal",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icon-128.png",
+         "19": "icon-19.png",
+         "48": "icon-48.png",
+         "64": "icon-64.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Web Developer Checklist"
+   },
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "{65bf4dd0-b6df-44f7-9285-cb5545037d80}"
+      }
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Alt+W"
+         }
+      }
+   },
+   "description": "Analyses any web page for violations of best practices",
+   "icons": {
+      "128": "icon-128.png",
+      "19": "icon-19.png",
+      "48": "icon-48.png",
+      "64": "icon-64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9W1uP4KFD162Rf8yYdblfTL5zMajrLylC5nVIgdjiiUGTC2apmEQkOkchse2AifKKix/0GXP8cjfw83FDDrec5rwi0HFca0EgTLHxnM2Vo1tROKKYxr+sY+bg1fJHOQ5IqtptPWo7EnQilxzsL3fOWh5ZxPYtEVSy8DNazSWPEwIDAQAB",
+   "manifest_version": 2,
+   "name": "Web Developer Checklist",
+   "permissions": [ "activeTab", "https://*/", "http://*/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.3"
+}

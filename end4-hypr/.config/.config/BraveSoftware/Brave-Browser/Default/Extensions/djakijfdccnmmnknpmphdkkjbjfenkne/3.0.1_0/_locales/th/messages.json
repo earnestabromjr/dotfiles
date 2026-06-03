@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>เราไม่สามารถเข้าถึงชื่อผู้ใช้หรือรหัสผ่าน Google ของคุณได้\u003C/p>\u003Cp> แอปนี้ได้รับโทเค็นจาก Google เท่านั้น เราจึงสามารถใส่รูปภาพลงใน Google Photos ของคุณได้\u003C/p>\u003Cp> โทเค็นถูกเก็บไว้ในเบราว์เซอร์และไม่เคยส่งถึงเรา\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "เข้าสู่ระบบล้มเหลว"
+   },
+   "LoginPrompt": {
+      "message": "คุณต้องลงชื่อเข้าใช้ Google Photos เพื่ออัปโหลดรูปภาพ"
+   },
+   "LoginSuccessful": {
+      "message": "คุณเข้าสู่ระบบสำเร็จแล้ว! คุณสามารถบันทึกรูปภาพไปยัง Google Photos ได้แล้ว"
+   },
+   "Popup_Instruction": {
+      "message": "เพียงคลิกขวาที่รูปภาพใดก็ได้แล้วเลือก &quot;บันทึกไปที่ Google Photos&quot;"
+   },
+   "RateUs": {
+      "message": "กรุณาให้คะแนนเรา"
+   },
+   "SaveFailed": {
+      "message": "เกิดปัญหาในการบันทึกภาพไปยัง Google Photos"
+   },
+   "SaveSuccessful": {
+      "message": "บันทึกรูปภาพใน Google Photos แล้ว!"
+   },
+   "SaveToMenu": {
+      "message": "บันทึกไปที่ Google รูปภาพ"
+   },
+   "TryAgain": {
+      "message": "ลองอีกครั้ง"
+   }
+}

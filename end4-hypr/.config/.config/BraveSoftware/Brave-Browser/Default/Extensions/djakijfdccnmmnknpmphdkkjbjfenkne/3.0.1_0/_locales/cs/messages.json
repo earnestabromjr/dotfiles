@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Nezískáváme přístup k vašemu uživatelskému jménu nebo heslu Google.\u003C/p>\u003Cp> Aplikace obdrží pouze token od společnosti Google, abychom mohli vkládat fotografie do vašich Fotek Google.\u003C/p>\u003Cp> Token je uložen v prohlížeči a nikdy nám není odeslán.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Přihlášení selhalo"
+   },
+   "LoginPrompt": {
+      "message": "Chcete-li nahrát fotografie, musíte se přihlásit do Fotek Google"
+   },
+   "LoginSuccessful": {
+      "message": "Úspěšně jste se přihlásili! Nyní můžete ukládat fotky do Fotek Google."
+   },
+   "Popup_Instruction": {
+      "message": "Stačí kliknout pravým tlačítkem na libovolný obrázek a vybrat „Uložit do Fotek Google“"
+   },
+   "RateUs": {
+      "message": "Ohodnoťte nás"
+   },
+   "SaveFailed": {
+      "message": "Při ukládání obrázku do Fotek Google došlo k problému"
+   },
+   "SaveSuccessful": {
+      "message": "Obrázek byl uložen do Fotek Google!"
+   },
+   "SaveToMenu": {
+      "message": "Uložit do Fotek Google"
+   },
+   "TryAgain": {
+      "message": "Zkus to znovu"
+   }
+}

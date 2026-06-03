@@ -1,0 +1,49 @@
+{
+   "action": {
+      "default_popup": "/data/cmd/index.html"
+   },
+   "background": {
+      "service_worker": "worker.js"
+   },
+   "commands": {
+      "_execute_action": {
+      },
+      "generate-password": {
+         "description": "Generate a Random Password"
+      },
+      "open-embedded": {
+         "description": "Open credentials in the embedded mode (useful for popup windows) (does not yet work in Firefox browser)"
+      },
+      "save-form": {
+         "description": "Save a new Login Form in KeePass"
+      }
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "homepage_url": "https://webextension.org/listing/keepass-helper.html",
+   "icons": {
+      "128": "/data/icons/128.png",
+      "16": "/data/icons/16.png",
+      "256": "/data/icons/256.png",
+      "32": "/data/icons/32.png",
+      "48": "/data/icons/48.png",
+      "512": "/data/icons/512.png",
+      "64": "/data/icons/64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6jgsLSqeT3/7YYm+Ol8d/ZgQTN/aC8iGvvC8rcv+qFqw9YgZhGIZJXGf5YlEuBBO6orc2omUxaUb7nOT8TcV5wEEV9hRSWLYumLcWpbL0CN56/Qq7ah9ME5C40xXxQA5jdgPU3PnTQyvi8wL49ufnk8PB+E6bgAPV4qU8+Mku03D8CUDlQMmEuyTIcHTdCA7TayxuHprdyvumVMhkyrr6vAt+tKlqX3QRbntOU5M+mDkKtMOdLI+TerkOmSRt1k8hwgnGtyb2AR5u0bqKRLxqk1LZgQumNhtRQ1BwDQo8n61qvgSsgDOyl6j/s4Us0eY9EDnfKKHwKWMh+OLMD7r2QIDAQAB",
+   "manifest_version": 3,
+   "name": "KeePassHelper Password Manager",
+   "optional_host_permissions": [ "\u003Call_urls>" ],
+   "optional_permissions": [ "nativeMessaging" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "/data/options/index.html"
+   },
+   "permissions": [ "storage", "activeTab", "scripting", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "/data/cmd/index.html", "/data/save/index.html", "/data/safe/index.html" ]
+   } ]
+}

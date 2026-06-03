@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Ne dobimo dostopa do vašega uporabniškega imena ali gesla za Google.\u003C/p>\u003Cp> Aplikacija prejme samo žeton od Googla, da lahko vstavimo fotografije v vaše Google Foto.\u003C/p>\u003Cp> Žeton je shranjen v brskalniku in nam nikoli ni poslan.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Prijava ni uspela"
+   },
+   "LoginPrompt": {
+      "message": "Za nalaganje fotografij se morate prijaviti v Google Foto"
+   },
+   "LoginSuccessful": {
+      "message": "Uspešno ste se prijavili! Zdaj lahko shranite fotografije v Google Foto."
+   },
+   "Popup_Instruction": {
+      "message": "Z desno miškino tipko kliknite katero koli sliko in izberite »Shrani v Google Foto«"
+   },
+   "RateUs": {
+      "message": "Prosimo, ocenite nas"
+   },
+   "SaveFailed": {
+      "message": "Pri shranjevanju slike v Google Foto je prišlo do težave"
+   },
+   "SaveSuccessful": {
+      "message": "Slika je shranjena v Google Foto!"
+   },
+   "SaveToMenu": {
+      "message": "Shrani v Google Foto"
+   },
+   "TryAgain": {
+      "message": "Poskusi ponovno"
+   }
+}

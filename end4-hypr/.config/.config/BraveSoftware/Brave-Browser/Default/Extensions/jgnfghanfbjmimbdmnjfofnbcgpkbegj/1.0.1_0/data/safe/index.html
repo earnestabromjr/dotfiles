@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <form action="#" autocomplete="off">
+    <div>
+      <td>Passphrase</td>
+      <td><input type="password" id="passphrase" required autocomplete="off" placeholder="required"></td>
+      <td>String</td>
+      <td><textarea id="data" required placeholder="Place the content to get encrypted or decrypted here"></textarea></td>
+      <td>Result</td>
+      <td><textarea id="result" readonly="true" placeholder="Result appears here"></textarea></td>
+    </div>
+
+    <div class="submit">
+      <input type="button" value="Cancel" id="cancel">
+      <input type="submit" value="Decrypt" id="decrypt">
+      <input type="submit" value="Encrypt" id="encrypt">
+    </div>
+  </form>
+  <script src="/tools/safe.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

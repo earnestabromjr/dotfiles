@@ -1,0 +1,169 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  width: 420px;
+}
+
+header {
+  height: 56px;
+  padding: 0 24px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #000 solid;
+}
+
+header h1 {
+  font-weight: normal;
+}
+
+main {
+  padding: 20px;
+}
+
+select {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+.form-row {
+  margin: 20px 0;
+}
+
+.form-row:first-of-type {
+  margin-top: 0;
+}
+
+.form-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.input-label {
+  font-weight: 500;
+  display: block;
+}
+
+.preview {
+  margin-top: 20px;
+}
+
+.test-input {
+  display: flex;
+  flex-direction: column;
+}
+
+datalist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+datalist option {
+  padding: 0;
+  user-select: none;
+}
+
+input[type="range"]:focus {
+  outline: 3px solid #fd0;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 2px;
+}
+
+button[role="switch"] {
+  display: flex;
+  margin: 2px;
+  padding: 4px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  width: 100%;
+  height: 3em;
+  text-align: left;
+  background-color: white;
+  color: black;
+  align-items: center;
+  flex-direction: row;
+}
+
+button[role="switch"] .label {
+  padding: 0;
+  margin: 0;
+  color: black;
+  flex: 1;
+}
+
+button[role="switch"] svg {
+  display: block;
+  width: 36px;
+  height: 20px;
+  forced-color-adjust: auto;
+}
+
+button[role="switch"] svg rect {
+  fill-opacity: 0;
+  stroke-width: 2;
+  stroke: currentcolor;
+}
+
+button[role="switch"] svg rect.off {
+  display: block;
+  stroke: currentcolor;
+  fill: currentcolor;
+  fill-opacity: 1;
+}
+
+button[role="switch"][aria-checked="true"] svg rect.off {
+  display: none;
+}
+
+button[role="switch"] svg rect.on {
+  display: none;
+}
+
+button[role="switch"][aria-checked="true"] svg rect.on {
+  color: green;
+  display: block;
+  stroke-color: currentcolor;
+  fill: currentcolor;
+  fill-opacity: 1;
+}
+
+button[role="switch"] span.off {
+  display: block;
+  margin-left: 8px;
+}
+
+button[role="switch"] span.on {
+  display: none;
+}
+
+button[role="switch"][aria-checked="true"] span.off {
+  display: none;
+}
+
+button[role="switch"][aria-checked="true"] span.on {
+  display: block;
+  margin-left: 8px;
+}
+
+button[role="switch"]:focus,
+button[role="switch"]:hover {
+  cursor: pointer;
+  outline: 3px solid #fd0;
+  outline-offset: 0;
+  box-shadow: inset 0 0 0 2px;
+  border: 2px solid #000;
+}
+
+.play-button {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}

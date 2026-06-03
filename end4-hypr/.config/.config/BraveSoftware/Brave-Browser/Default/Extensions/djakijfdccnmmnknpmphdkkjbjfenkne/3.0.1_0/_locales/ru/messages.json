@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Мы не получаем доступа к вашему имени пользователя или паролю Google.\u003C/p>\u003Cp> Приложение получает токен только от Google, чтобы мы могли размещать фотографии в ваших Google Фото.\u003C/p>\u003Cp> Токен хранится в браузере и никогда не отправляется нам.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Ошибка входа"
+   },
+   "LoginPrompt": {
+      "message": "Вам необходимо авторизоваться в Google Фото, чтобы загружать фотографии."
+   },
+   "LoginSuccessful": {
+      "message": "Вы успешно вошли в! Теперь вы можете сохранять фотографии в Google Фото."
+   },
+   "Popup_Instruction": {
+      "message": "Просто щелкните любое изображение правой кнопкой мыши и выберите «Сохранить в Google Фото»."
+   },
+   "RateUs": {
+      "message": "Пожалуйста, оцените нас"
+   },
+   "SaveFailed": {
+      "message": "Не удалось сохранить изображение в Google Фото."
+   },
+   "SaveSuccessful": {
+      "message": "Изображение сохранено в Google Фото!"
+   },
+   "SaveToMenu": {
+      "message": "Сохранить в Google Фото"
+   },
+   "TryAgain": {
+      "message": "Попробуй снова"
+   }
+}

@@ -1,0 +1,32 @@
+{
+   "action": {
+      "default_icon": "gear19.png"
+   },
+   "background": {
+      "service_worker": "bg.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "load.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "View current page sources: HTML + Javascript + CSS",
+   "icons": {
+      "128": "gear128.png",
+      "16": "gear19.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC6eKT8qxPtjft+eJ6Py4XD/AL79YQspQMoOfKS0QFyV/x06QVgjqn0Y7mtAM0DBCX0vPA1Hmttuz8bo5XEmHyFe2bGMCFNFou+8gJ8gSaC2OJznn9b90UauTljju5UxcuIMNVpNP8m4xD+v/60VpmsELZamIeV0RDS2pY4FJVXOwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "88",
+   "name": "Quick source viewer",
+   "options_page": "options.html",
+   "permissions": [ "storage" ],
+   "short_name": "source view",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.1",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "default.css" ]
+   } ]
+}

@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Ne dobivamo pristup vašem korisničkom imenu ili zaporki za Google.\u003C/p>\u003Cp> Aplikacija prima samo token od Googlea kako bismo mogli staviti fotografije u vaše Google fotografije.\u003C/p>\u003Cp> Token je pohranjen u pregledniku i nikad nam se ne šalje.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Prijava nije uspjela"
+   },
+   "LoginPrompt": {
+      "message": "Morate se prijaviti na Google fotografije za prijenos fotografija"
+   },
+   "LoginSuccessful": {
+      "message": "Uspješno ste se prijavili! Sada možete spremati fotografije u Google fotografije."
+   },
+   "Popup_Instruction": {
+      "message": "Samo desnom tipkom miša kliknite bilo koju sliku i odaberite &quot;Spremi u Google fotografije&quot;"
+   },
+   "RateUs": {
+      "message": "Molimo ocijenite nas"
+   },
+   "SaveFailed": {
+      "message": "Došlo je do problema prilikom spremanja slike u Google fotografije"
+   },
+   "SaveSuccessful": {
+      "message": "Slika je spremljena u Google fotografije!"
+   },
+   "SaveToMenu": {
+      "message": "Spremi u Google fotografije"
+   },
+   "TryAgain": {
+      "message": "Pokušajte ponovo"
+   }
+}

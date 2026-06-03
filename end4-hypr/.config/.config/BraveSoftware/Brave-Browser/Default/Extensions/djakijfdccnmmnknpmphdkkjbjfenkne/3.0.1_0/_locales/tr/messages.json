@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Google kullanıcı adınıza veya şifrenize erişemiyoruz.\u003C/p>\u003Cp> Uygulama, Google Fotoğraflarınıza fotoğraf koyabilmemiz için yalnızca Google&#39;dan bir jeton alır.\u003C/p>\u003Cp> Belirteç tarayıcıda saklanır ve bize asla gönderilmez.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Giriş başarısız oldu"
+   },
+   "LoginPrompt": {
+      "message": "Fotoğraf yüklemek için Google Fotoğraflar&#39;da oturum açmanız gerekir"
+   },
+   "LoginSuccessful": {
+      "message": "Başarıyla giriş yaptınız! Artık fotoğrafları Google Fotoğraflar&#39;a kaydedebilirsiniz."
+   },
+   "Popup_Instruction": {
+      "message": "Herhangi bir resme sağ tıklayın ve &quot;Google Fotoğraflar&#39;a Kaydet&quot; i seçin"
+   },
+   "RateUs": {
+      "message": "Lütfen Bizi Değerlendirin"
+   },
+   "SaveFailed": {
+      "message": "Resim Google Fotoğraflar&#39;a kaydedilirken bir sorun oluştu"
+   },
+   "SaveSuccessful": {
+      "message": "Resim Google Fotoğraflar&#39;a kaydedildi!"
+   },
+   "SaveToMenu": {
+      "message": "Google Fotoğraflar&#39;a kaydet"
+   },
+   "TryAgain": {
+      "message": "Tekrar deneyin"
+   }
+}

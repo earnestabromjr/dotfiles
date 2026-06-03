@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Kami tidak mendapat akses kepada nama pengguna atau kata laluan Google anda.\u003C/p>\u003Cp> Apl hanya menerima token daripada Google supaya kami boleh meletakkan foto ke dalam Google Photos anda.\u003C/p>\u003Cp> Token disimpan dalam penyemak imbas dan tidak pernah dihantar kepada kami.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Daftar masuk gagal"
+   },
+   "LoginPrompt": {
+      "message": "Anda perlu log masuk ke Google Photos untuk memuat naik foto"
+   },
+   "LoginSuccessful": {
+      "message": "Anda telah berjaya log masuk! Anda kini boleh menyimpan foto ke Google Photos."
+   },
+   "Popup_Instruction": {
+      "message": "Cuma klik kanan pada mana-mana imej dan pilih &quot;Simpan ke Foto Google&quot;"
+   },
+   "RateUs": {
+      "message": "Sila Nilaikan Kami"
+   },
+   "SaveFailed": {
+      "message": "Terdapat masalah menyimpan imej ke Google Photos"
+   },
+   "SaveSuccessful": {
+      "message": "Imej disimpan ke Google Photos!"
+   },
+   "SaveToMenu": {
+      "message": "Simpan ke Google Photos"
+   },
+   "TryAgain": {
+      "message": "Cuba lagi"
+   }
+}

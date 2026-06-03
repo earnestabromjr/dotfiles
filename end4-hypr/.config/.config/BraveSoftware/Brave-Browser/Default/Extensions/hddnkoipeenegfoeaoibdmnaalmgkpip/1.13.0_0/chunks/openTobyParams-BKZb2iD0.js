@@ -1,0 +1,1 @@
+import"./Note-BF7hnBjn.js";function e(){const{protocol:o,host:t,pathname:a}=window.location,r=`${o}//${t}${a}`;window.history.replaceState({},document.title,r)}function s(o){const t=new URLSearchParams(o),a={};for(const r of Array.from(t.entries()))a[r[0]]=r[1];return a}export{e as c,s as p};

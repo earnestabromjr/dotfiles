@@ -1,0 +1,39 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "img/16x16-on.png",
+         "32": "img/32x32-on.png"
+      },
+      "default_popup": "options.html",
+      "default_title": "Show options"
+   },
+   "background": {
+      "service_worker": "src/worker.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "css": [ "css/content.css" ],
+      "js": [ "src/content.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "This extension provides aid for the visually impaired people.",
+   "icons": {
+      "128": "img/128x128-on.png",
+      "32": "img/32x32-on.png",
+      "48": "img/48x48-on.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmFqo73t0jVKpwKBmn/3aGIJN80JELuGTgfA1Q4Mokcdm6nJAOHN0M04osFihWzV9XcQ8iCcYWdjx6ecc3S4zXKu5LJnO+p+3BzYdtTFiHP83BRvxLOKNy9lBCVFow/tyu3qMygVjHi+tcwPMmw8V3N7/ukGv8CtIXRiTYrd8IfwIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "120",
+   "name": "Screen Reader for Google Chrome",
+   "permissions": [ "storage", "tts" ],
+   "short_name": "Screen Reader",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.8.0",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "src/content/audio.js", "src/content/video.js" ]
+   } ]
+}

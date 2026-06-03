@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body vbox data-count="0">
+  <div id="search-container">
+    <input type="search">
+    <span></span>
+    <button id="ssdb" title="Securely store passwords using AES-CBC 256 encryption in the synchronized storage of your browser. This allows you to access the passwords on all synced devices, without storing them in your KeePass database.
+
+  - Press {{shortcut-ssdb}}
+
+To close this database, use the right-click context menu over the action button"  class="hidden" disabled>Synced <u>D</u>B</button>
+    <input type="button" value="Rate Me" id="rate" class="hidden">
+  </div>
+  <!-- <select flex=1 id="list" size=5 title="Double-click on an entry or press 'Enter' key to perform {USERNAME}{TAB}{PASSWORD}{ENTER} sequence" tabindex="0"></select> -->
+
+  <simple-list-view id="list" headers="false" drag="false" flex="1" title="Double-click on an entry or press 'Enter' key to perform {USERNAME}{TAB}{PASSWORD}{ENTER} sequence" tabindex="0">
+    <span width="2fr">Username</span>
+    <span width="1fr" id="title">Title</span>
+    <span width="1fr" id="group">Group</span>
+  </simple-list-view>
+
+  <div id="toast" class="hidden">
+    <span></span>
+    <input type="button" value="Check Remote Frames">
+  </div>
+  <div id="toolbar">
+    <button title="To insert the selected username either:
+  - Press {{shortcut-insert-login}}
+  - Click on the button" data-cmd="insert-login" disabled><u>U</u>sername</button>
+    <button title="To insert the selected password either:
+  - Press {{shortcut-insert-password}}
+  - Click on the button" data-cmd="insert-password" disabled><u>P</u>assword</button>
+    <button title="To perform {USERNAME}{TAB}{PASSWORD}{ENTER} sequence either:
+  - {{click-insert-both}}
+  - Press {{shortcut-insert-both}}
+
+To perform {USERNAME}{TAB}{PASSWORD} sequence either:
+  - {{click-insert-both-no-submit}}
+  - Press {{shortcut-insert-both-no-submit}}" data-cmd="insert-both" disabled><u>B</u>oth</button>
+    <button title="To copy the one-time password token (OTP) to the clipboard either:
+  - Press {{shortcut-otp}}
+  - Click on the button" data-cmd="otp" disabled><u>O</u>TP</button>
+    <button title="To use stored passkeys for login (after the page requests a passkey and before continuing), you can either:
+  - Press {{shortcut-passkey}}
+  - Click on the button
+
+Read FAQs page for more info" data-cmd="passkey" disabled>Pass<u>k</u>ey</button>
+  <button title="Remove selected credentials from your browser's secure synced storage:
+
+  - Backspace
+  - Delete" disabled data-cmd="delete">Delete</button>
+    <input type="button" value="Copy (C/X)" title="To copy username to the clipboard either:
+  - Press {{shortcut-copy}}
+  - {{click-copy}}
+To copy password to the clipboard either:
+  - Press {{shortcut-password}}
+  - {{click-password}}" data-cmd="copy" disabled>
+  </div>
+  <div id="host-access" hbox class="hidden">
+    <div>
+      Grant access to the KeePassHttp plugin: <input type="button" value="Proceed">
+    </div>
+    <p>If you prefer to use KeePassXC or local database, use the <a href="#" data-cmd="options-page">options page</a> to configure</p>
+    <p>If you are new to KeePassHelper, Watch the <a href="https://www.youtube.com/watch?v=L1Ze02XUi34" target="_blank">usage instruction</a> on YouTube</p>
+  </div>
+  <form id="password-needed" hbox class="hidden">
+    <div vbox align="center">
+      <span></span> <input type="password" placeholder="Insert the Password and hit Enter" required>
+    </div>
+  </form>
+  <div id="message"></div>
+  <notification-view id="notify"></notification-view>
+
+  <script src="components/list-view.js"></script>
+  <script src="components/notification-view.js"></script>
+  <script src="/tools/tld.js"></script>
+  <script src="/connect/SecureSyncedDB.js"></script>
+  <script src="/connect/api.js"></script>
+  <script src="/connect/keepass/keepass.js"></script>
+  <script src="/connect/keepassxc/nacl-fast.min.js"></script>
+  <script src="/connect/keepassxc/keepassxc.js"></script>
+  <script src="/connect/kdbxweb/kdbxweb.js"></script>
+  <script src="/connect/kdbxweb/connect.js"></script>
+  <script src="/connect/totp.js"></script>
+  <script src="/tools/safe.js"></script>
+  <script src="shortcuts.js"></script>
+  <script src="/data/passkey/passkey.get.js"></script>
+  <script src="index.js"></script>
+  <script src="rate.js"></script>
+  <script src="ssdb.js"></script>
+</body>
+</html>

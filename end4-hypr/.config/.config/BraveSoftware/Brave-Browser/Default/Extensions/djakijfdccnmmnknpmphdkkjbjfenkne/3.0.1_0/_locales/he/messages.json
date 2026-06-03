@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp style=\";text-align:right;direction:rtl\">אנחנו לא מקבלים גישה לשם המשתמש או הסיסמה שלך ב-Google.\u003C/p>\u003Cp style=\";text-align:right;direction:rtl\"> האפליקציה מקבלת רק אסימון מגוגל כדי שנוכל להכניס תמונות לתמונות Google שלך.\u003C/p>\u003Cp style=\";text-align:right;direction:rtl\"> האסימון נשמר בדפדפן ולא נשלח אלינו לעולם.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "ההתחברות נכשלה"
+   },
+   "LoginPrompt": {
+      "message": "עליך להיכנס ל-Google Photos כדי להעלות תמונות"
+   },
+   "LoginSuccessful": {
+      "message": "התחברת בהצלחה! כעת תוכל לשמור תמונות בתמונות Google."
+   },
+   "Popup_Instruction": {
+      "message": "פשוט לחץ לחיצה ימנית על כל תמונה ובחר &quot;שמור בתמונות Google&quot;"
+   },
+   "RateUs": {
+      "message": "אנא דרג אותנו"
+   },
+   "SaveFailed": {
+      "message": "הייתה בעיה בשמירת התמונה בתמונות Google"
+   },
+   "SaveSuccessful": {
+      "message": "התמונה נשמרה בתמונות Google!"
+   },
+   "SaveToMenu": {
+      "message": "שמור בתמונות Google"
+   },
+   "TryAgain": {
+      "message": "נסה שוב"
+   }
+}

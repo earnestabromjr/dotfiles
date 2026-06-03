@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp style=\";text-align:right;direction:rtl\">ہمیں آپ کے Google صارف نام یا پاس ورڈ تک رسائی نہیں ملتی۔\u003C/p>\u003Cp style=\";text-align:right;direction:rtl\"> ایپ کو گوگل سے صرف ایک ٹوکن ملتا ہے تاکہ ہم آپ کی Google تصاویر میں تصاویر ڈال سکیں۔\u003C/p>\u003Cp style=\";text-align:right;direction:rtl\"> ٹوکن براؤزر میں محفوظ ہوتا ہے اور ہمیں کبھی نہیں بھیجا جاتا ہے۔\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "لاگ ان ناکام رہے"
+   },
+   "LoginPrompt": {
+      "message": "تصاویر اپ لوڈ کرنے کے لیے آپ کو گوگل فوٹوز میں لاگ ان کرنے کی ضرورت ہے۔"
+   },
+   "LoginSuccessful": {
+      "message": "آپ کامیابی سے لاگ ان ہو گئے ہیں! اب آپ گوگل فوٹوز میں تصاویر محفوظ کر سکتے ہیں۔"
+   },
+   "Popup_Instruction": {
+      "message": "کسی بھی تصویر پر صرف دائیں کلک کریں اور &quot;Google تصاویر میں محفوظ کریں&quot; کو منتخب کریں۔"
+   },
+   "RateUs": {
+      "message": "برائے مہربانی ہمیں شرح دیں"
+   },
+   "SaveFailed": {
+      "message": "Google تصاویر میں تصویر محفوظ کرنے میں ایک مسئلہ تھا۔"
+   },
+   "SaveSuccessful": {
+      "message": "تصویر گوگل فوٹوز میں محفوظ ہو گئی!"
+   },
+   "SaveToMenu": {
+      "message": "گوگل فوٹوز میں محفوظ کریں۔"
+   },
+   "TryAgain": {
+      "message": "دوبارہ کوشش کریں"
+   }
+}

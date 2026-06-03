@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>We krijgen geen toegang tot uw Google-gebruikersnaam of -wachtwoord.\u003C/p>\u003Cp> De app ontvangt alleen een token van Google zodat we foto&#39;s in je Google Foto&#39;s kunnen plaatsen.\u003C/p>\u003Cp> Het token wordt opgeslagen in de browser en nooit naar ons verzonden.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Aanmelden mislukt"
+   },
+   "LoginPrompt": {
+      "message": "U moet inloggen bij Google Foto&#39;s om foto&#39;s te uploaden"
+   },
+   "LoginSuccessful": {
+      "message": "Je bent succesvol ingelogd! U kunt nu foto&#39;s opslaan in Google Foto&#39;s."
+   },
+   "Popup_Instruction": {
+      "message": "Klik met de rechtermuisknop op een afbeelding en kies &quot;Opslaan in Google Foto&#39;s&quot;"
+   },
+   "RateUs": {
+      "message": "Beoordeel ons"
+   },
+   "SaveFailed": {
+      "message": "Er is een probleem opgetreden bij het opslaan van de afbeelding in Google Foto&#39;s"
+   },
+   "SaveSuccessful": {
+      "message": "Afbeelding opgeslagen in Google Foto&#39;s!"
+   },
+   "SaveToMenu": {
+      "message": "Opslaan in Google Foto&#39;s"
+   },
+   "TryAgain": {
+      "message": "Probeer het nog eens"
+   }
+}

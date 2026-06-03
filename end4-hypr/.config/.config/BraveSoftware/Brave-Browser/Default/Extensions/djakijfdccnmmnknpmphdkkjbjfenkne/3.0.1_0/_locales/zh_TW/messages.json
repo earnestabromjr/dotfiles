@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>我們無法訪問您的 Google 用戶名或密碼。\u003C/p>\u003Cp>該應用程序僅從 Google 接收令牌，以便我們可以將照片放入您的 Google 相冊。\u003C/p>\u003Cp>令牌存儲在瀏覽器中，從未發送給我們。\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "登錄失敗"
+   },
+   "LoginPrompt": {
+      "message": "您需要登錄 Google 相冊才能上傳照片"
+   },
+   "LoginSuccessful": {
+      "message": "您已成功登錄！您現在可以將照片保存到 Google 相冊。"
+   },
+   "Popup_Instruction": {
+      "message": "只需右鍵單擊任何圖像並選擇“保存到 Google 相冊”"
+   },
+   "RateUs": {
+      "message": "請給我們評分"
+   },
+   "SaveFailed": {
+      "message": "將圖片保存到 Google 相冊時出現問題"
+   },
+   "SaveSuccessful": {
+      "message": "圖片已保存到 Google 相冊！"
+   },
+   "SaveToMenu": {
+      "message": "保存到 Google 相冊"
+   },
+   "TryAgain": {
+      "message": "再試一次"
+   }
+}

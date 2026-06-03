@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>हमें आपके Google उपयोगकर्ता नाम या पासवर्ड तक पहुंच नहीं मिलती है।\u003C/p>\u003Cp> ऐप को केवल Google से टोकन प्राप्त होता है ताकि हम आपके Google फ़ोटो में फ़ोटो डाल सकें।\u003C/p>\u003Cp> टोकन ब्राउज़र में संग्रहीत होता है और हमें कभी नहीं भेजा जाता है।\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "लॉगिन विफल"
+   },
+   "LoginPrompt": {
+      "message": "फ़ोटो अपलोड करने के लिए आपको Google फ़ोटो में लॉग इन करना होगा"
+   },
+   "LoginSuccessful": {
+      "message": "आप सफलता पूर्वक प्रवेश कर चुके हैं! अब आप फ़ोटो को Google फ़ोटो में सहेज सकते हैं।"
+   },
+   "Popup_Instruction": {
+      "message": "बस किसी भी छवि पर राइट क्लिक करें और &quot;Google फ़ोटो में सहेजें&quot; चुनें"
+   },
+   "RateUs": {
+      "message": "कृपया हमें दर दें"
+   },
+   "SaveFailed": {
+      "message": "चित्र को Google फ़ोटो में सहेजने में एक समस्या हुई"
+   },
+   "SaveSuccessful": {
+      "message": "चित्र Google फ़ोटो में सहेजा गया!"
+   },
+   "SaveToMenu": {
+      "message": "Google फ़ोटो में सहेजें"
+   },
+   "TryAgain": {
+      "message": "पुनः प्रयास करें"
+   }
+}

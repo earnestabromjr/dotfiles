@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Non abbiamo accesso al tuo nome utente o password di Google.\u003C/p>\u003Cp> L&#39;app riceve solo un token da Google in modo che possiamo inserire le foto nelle tue Google Foto.\u003C/p>\u003Cp> Il token viene memorizzato nel browser e non ci viene mai inviato.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Accesso non riuscito"
+   },
+   "LoginPrompt": {
+      "message": "Devi accedere a Google Foto per caricare le foto"
+   },
+   "LoginSuccessful": {
+      "message": "Hai effettuato il log in con successo! Ora puoi salvare le foto su Google Foto."
+   },
+   "Popup_Instruction": {
+      "message": "Basta fare clic con il tasto destro su qualsiasi immagine e scegliere &quot;Salva su Google Foto&quot;"
+   },
+   "RateUs": {
+      "message": "Per favore, valutaci"
+   },
+   "SaveFailed": {
+      "message": "Si è verificato un problema durante il salvataggio dell&#39;immagine su Google Foto"
+   },
+   "SaveSuccessful": {
+      "message": "Immagine salvata su Google Foto!"
+   },
+   "SaveToMenu": {
+      "message": "Salva su Google Foto"
+   },
+   "TryAgain": {
+      "message": "Riprova"
+   }
+}

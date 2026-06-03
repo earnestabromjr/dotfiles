@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Nu avem acces la numele de utilizator sau parola dvs. Google.\u003C/p>\u003Cp> Aplicația primește doar un simbol de la Google, astfel încât să putem pune fotografii în Google Foto.\u003C/p>\u003Cp> Tokenul este stocat în browser și nu ne-a fost trimis niciodată.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Autentificare esuata"
+   },
+   "LoginPrompt": {
+      "message": "Trebuie să vă conectați la Google Foto pentru a încărca fotografii"
+   },
+   "LoginSuccessful": {
+      "message": "Te-ai autentificat cu succes! Acum puteți salva fotografii în Google Foto."
+   },
+   "Popup_Instruction": {
+      "message": "Doar faceți clic dreapta pe orice imagine și alegeți „Salvați în Google Foto”"
+   },
+   "RateUs": {
+      "message": "Vă rugăm să ne evaluați"
+   },
+   "SaveFailed": {
+      "message": "A apărut o problemă la salvarea imaginii în Google Foto"
+   },
+   "SaveSuccessful": {
+      "message": "Imaginea salvată în Google Foto!"
+   },
+   "SaveToMenu": {
+      "message": "Salvați în Google Foto"
+   },
+   "TryAgain": {
+      "message": "Încearcă din nou"
+   }
+}

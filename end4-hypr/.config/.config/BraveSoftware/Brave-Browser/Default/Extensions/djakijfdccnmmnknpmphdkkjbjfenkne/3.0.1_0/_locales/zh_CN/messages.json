@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>我们无法访问您的 Google 用户名或密码。\u003C/p>\u003Cp>该应用程序仅从 Google 接收令牌，以便我们可以将照片放入您的 Google 相册。\u003C/p>\u003Cp>令牌存储在浏览器中，从未发送给我们。\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "登录失败"
+   },
+   "LoginPrompt": {
+      "message": "您需要登录 Google 相册才能上传照片"
+   },
+   "LoginSuccessful": {
+      "message": "您已成功登录！您现在可以将照片保存到 Google 相册。"
+   },
+   "Popup_Instruction": {
+      "message": "只需右键单击任何图像并选择“保存到 Google 相册”"
+   },
+   "RateUs": {
+      "message": "请给我们评分"
+   },
+   "SaveFailed": {
+      "message": "将图片保存到 Google 相册时出现问题"
+   },
+   "SaveSuccessful": {
+      "message": "图片已保存到 Google 相册！"
+   },
+   "SaveToMenu": {
+      "message": "保存到 Google 相册"
+   },
+   "TryAgain": {
+      "message": "再试一次"
+   }
+}

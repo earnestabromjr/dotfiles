@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.min.css">
+
+    <title>Login to Google Photos</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="text-center mt-3">
+            <h1>
+                <img src="/icon-512.png" class="h-1 mr-3" />
+                <span data-loc="AppName"></span>
+            </h1>
+        </header>
+
+        <section class="section-login text-center">
+
+            <p class="mt-5" data-loc="LoginPrompt"></p>
+
+            <p>
+                <button class="btn btn-link btn-login">
+                    <img src="/img/g-login.png" />
+                </button>
+            </p>
+
+            <p class="loader d-none">
+                <span class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </span>
+            </p>
+
+            <div data-loc="LoginExplanation"></div>
+
+            <div class="pnl-try-again d-none">
+                <p class="text-danger" data-loc="LoginFailed"></p>
+                <p>
+                    <button class="btn btn-link btn-again">
+                        <img src="/img/g-login.png" />
+                    </button>
+                </p>
+            </div>
+        </section>
+
+        <section class="section-success d-none">
+            <p class="text-center text-success mt-5" data-loc="LoginSuccessful"></p>
+        </section>
+
+        <hr />
+
+        <footer class="text-center">            
+            <p>
+                <a data-path="/" target="_blank" data-loc="Link_HomePage"></a>
+            </p>
+            <p>
+                <a data-path="/privacy-policy" target="_blank" data-loc="Link_PP"></a>
+            </p>
+            <p>
+                <a data-path="/terms" target="_blank" data-loc="Link_Terms"></a>
+            </p>
+        </footer>
+
+    </div>
+
+    <script type="module" src="js/common.js"></script>
+    <script type="module" src="js/LoginPage.js"></script>
+</body>
+
+</html>

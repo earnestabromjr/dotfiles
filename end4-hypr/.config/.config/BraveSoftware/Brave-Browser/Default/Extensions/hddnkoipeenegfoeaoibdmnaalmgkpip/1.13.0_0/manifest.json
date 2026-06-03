@@ -1,0 +1,58 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "img/icon-16.png",
+         "32": "img/icon-32.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Toby"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "chrome_url_overrides": {
+      "newtab": "toby.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content-scripts/content-script.js", "content-scripts/inject-public.js" ],
+      "matches": [ "https://*.gettoby.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "default-src 'self'; frame-src 'self' https://gettoby.typeform.com https://www.loom.com/ https://storage.googleapis.com https://*.youtube.com https://*.youtube-nocookie.com https://*.gettoby.com; script-src 'self'; object-src 'none'; connect-src https://api2.gettoby.com https://api2.gettoby.com https://logs.gettoby.com https://capi.gettoby.com wss://api.gettoby.com/ws https://api.mixpanel.com http://api.mixpanel.com https://api-js.mixpanel.com https://api.amplitude.com http://api.amplitude.com https://*.nr-data.net https://favicons.gettoby.com/v3/; style-src https://fonts.googleapis.com 'unsafe-inline' 'self' *; font-src 'self' https://fonts.gstatic.com; img-src * https://logs.gettoby.com data:;"
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "toby_links",
+         "path": "toby_links_rules.json"
+      } ]
+   },
+   "description": "Your productivity hub. Save and organize your browser tabs from anywhere.",
+   "externally_connectable": {
+      "ids": [ "*" ]
+   },
+   "host_permissions": [ "https://*.gettoby.com/" ],
+   "icons": {
+      "128": "img/icon-128.png",
+      "16": "img/icon-16.png",
+      "48": "img/icon-48.png",
+      "96": "img/icon-96.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnZjXZstubC41pUYUDIYpVV7pMS3GeIqHTpgGfaVtghOqQsPcGhokwGDBZ/yBdOPAijfexZez7KAKCKpSY3TB0H/Wu3fOdTEe/noup++p4JEKRRGkUBfpx/hxf0eK1KZT/CM1V6PnAd3YFsnsuAiEn1z0yqTRcmtD1Dj2/pzFmlT886viYn+fEeHcAbRzSy0WxKgQDaDaWb1I6icH0e0VHF04snBxW7GGYvXYf/CsJ7N9ZpxNWhw6DskoSISI/hsgc6GUS4V2Qw1DfV1kfZYPCFuXvZsXmQGre42rDOjgL4JWQjNwv76EHz0YkQvhqaqoPW8a7i5SivwDRaJGxrG8ZwIDAQAB",
+   "manifest_version": 3,
+   "name": "Toby: Tab Management Tool",
+   "omnibox": {
+      "keyword": "to/"
+   },
+   "optional_host_permissions": [ "*://to/*", "\u003Call_urls>" ],
+   "optional_permissions": [ "history", "tabGroups" ],
+   "permissions": [ "contextMenus", "unlimitedStorage", "storage", "tabs", "declarativeNetRequestWithHostAccess" ],
+   "short_name": "Toby",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.13.0",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "assets/js/*.js", "assets/css/*.css", "icon-128.png", "icon-32.png" ]
+   } ]
+}

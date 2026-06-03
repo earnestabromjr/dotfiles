@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Me ei pääse ligi teie Google&#39;i kasutajanimele ega paroolile.\u003C/p>\u003Cp> Rakendus saab Google&#39;ilt ainult märgi, et saaksime fotosid teie teenusesse Google Photos lisada.\u003C/p>\u003Cp> Token salvestatakse brauserisse ja seda meile kunagi ei saadeta.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Sisselogimine ebaõnnestus"
+   },
+   "LoginPrompt": {
+      "message": "Fotode üleslaadimiseks peate sisse logima teenusesse Google Photos"
+   },
+   "LoginSuccessful": {
+      "message": "Olete edukalt sisse loginud! Nüüd saate fotosid teenusesse Google Photos salvestada."
+   },
+   "Popup_Instruction": {
+      "message": "Paremklõpsake mis tahes pildil ja valige &quot;Salvesta teenusesse Google Photos&quot;."
+   },
+   "RateUs": {
+      "message": "Palun hinnake meid"
+   },
+   "SaveFailed": {
+      "message": "Kujutise salvestamisel teenusesse Google Photos ilmnes probleem"
+   },
+   "SaveSuccessful": {
+      "message": "Pilt salvestati teenusesse Google Photos!"
+   },
+   "SaveToMenu": {
+      "message": "Salvestage teenusesse Google Photos"
+   },
+   "TryAgain": {
+      "message": "Proovi uuesti"
+   }
+}

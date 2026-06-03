@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Googleのユーザー名またはパスワードにアクセスすることはできません。\u003C/p>\u003Cp>アプリはGoogleからのみトークンを受け取るため、写真をGoogleフォトに入れることができます。\u003C/p>\u003Cp>トークンはブラウザに保存され、送信されることはありません。\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "ログインに失敗しました"
+   },
+   "LoginPrompt": {
+      "message": "写真をアップロードするには、Googleフォトにログインする必要があります"
+   },
+   "LoginSuccessful": {
+      "message": "正常にログインしました。写真をGoogleフォトに保存できるようになりました。"
+   },
+   "Popup_Instruction": {
+      "message": "画像を右クリックして[Googleフォトに保存]を選択するだけです"
+   },
+   "RateUs": {
+      "message": "評価してください"
+   },
+   "SaveFailed": {
+      "message": "Googleフォトへの画像の保存に問題がありました"
+   },
+   "SaveSuccessful": {
+      "message": "Googleフォトに保存された画像！"
+   },
+   "SaveToMenu": {
+      "message": "Googleフォトに保存"
+   },
+   "TryAgain": {
+      "message": "再試行する"
+   }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>New Passkey Generated :: KeePassHelper</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1>Store the following StringField inside KeePass application or Synced Storage.</h1>
+  <p class="note">If this data is lost, the newly generated passkey will be unrecoverable, and you won't be able to log in to the site with it.<br><br>Ensure that "String Fields" access is enabled in KeePassHTTP settings, so this extension can read the stored passkeys.<span id="ssdb-info"><br><br>If you prefer to store it in Secure Storage but the option is disabled, it means your database is not open. Please open the database first, then click the refresh button.</span></p>
+  <div id="content">
+    <label for="name">Name</label>
+    <input type="text" value="KPH: PASSKEY_STORAGE" id="name" title="You can append any string to this key if you have more than one passkeys">
+    <input type="button" id="save-name" value="Copy">
+    <label for="data">Value</label>
+    <textarea readonly id="data" rows="6"></textarea>
+    <input type="button" id="save-value" value="Copy">
+    <label for="format">Format</label>
+    <div id="format">
+      <label title="This format is compatible with KeePassXC and can be used across different devices. To use it with KeePassHelper, you need to configure KeePassHTTP to return all string fields – not only those starting with 'KHP: '.">
+        <input type="radio" name="format" value="keepassxc">
+        <span>KeePassXC</span>
+      </label>
+      <label title="This format is only usable by the KeePassHelper extension. However, you don't need to configure KeePassHTTP to return all string fields. You can also store multiple passkeys for each credential using this format.">
+        <input type="radio" name="format" value="json" checked>
+        <span>KeePassHelper (JSON)</span>
+      </label>
+    </div>
+    <span></span>
+  </div>
+  <div class="info">
+    <span>Save in</span>
+    <input type="button" id="ssdb" value="Synced Storage" disabled>
+    <span class="or">OR</span>
+    <div class="keepass">
+      <select id="entries">
+        <option value="">New Entry</option>
+      </select>
+      <span>on</span>
+      <input type="button" id="keepass" value="KeePass">
+    </div>
+  </div>
+  <div class="done">
+    <div style="flex: 1">Read <a data-href="20" target="_blank">FAQs page</a> for more info</div>
+    <input type="button" id="refresh" value="Refresh">
+    <input type="button" id="done" value="Done">
+  </div>
+  <dialog id="prompt">
+    <form>
+      <p>
+        <label for="password-input">Enter Database Password:</label>
+        <input type="password" id="password-input" required>
+      </p>
+      <div>
+        <input type="button" value="Cancel">
+        <input type="submit" value="OK">
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/tools/safe.js"></script>
+  <script src="/tools/tld.js"></script>
+  <script src="/connect/SecureSyncedDB.js"></script>
+  <script src="/connect/api.js"></script>
+  <script src="/connect/keepass/keepass.js"></script>
+  <script src="/connect/kdbxweb/kdbxweb.js"></script>
+  <script src="/connect/kdbxweb/connect.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

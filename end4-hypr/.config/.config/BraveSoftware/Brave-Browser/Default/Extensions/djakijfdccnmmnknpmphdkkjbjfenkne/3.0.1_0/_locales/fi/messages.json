@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Emme pääse käyttämään Google-käyttäjänimeäsi tai salasanaasi.\u003C/p>\u003Cp> Sovellus saa vain tunnuksen Googlelta, jotta voimme lisätä kuvia Google-kuviin.\u003C/p>\u003Cp> Tunnus tallennetaan selaimeen, eikä sitä koskaan lähetetä meille.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Kirjautuminen epäonnistui"
+   },
+   "LoginPrompt": {
+      "message": "Sinun on kirjauduttava sisään Google Kuviin, jotta voit ladata kuvia"
+   },
+   "LoginSuccessful": {
+      "message": "Olet onnistuneesti kirjautunut sisään! Voit nyt tallentaa kuvia Google Kuviin."
+   },
+   "Popup_Instruction": {
+      "message": "Napsauta hiiren kakkospainikkeella mitä tahansa kuvaa ja valitse &quot;Tallenna Google Kuviin&quot;"
+   },
+   "RateUs": {
+      "message": "Ole hyvä ja arvioi meitä"
+   },
+   "SaveFailed": {
+      "message": "Ongelma tallennettaessa kuvaa Google Kuviin"
+   },
+   "SaveSuccessful": {
+      "message": "Kuva tallennettu Google Kuviin!"
+   },
+   "SaveToMenu": {
+      "message": "Tallenna Google Kuviin"
+   },
+   "TryAgain": {
+      "message": "Yritä uudelleen"
+   }
+}

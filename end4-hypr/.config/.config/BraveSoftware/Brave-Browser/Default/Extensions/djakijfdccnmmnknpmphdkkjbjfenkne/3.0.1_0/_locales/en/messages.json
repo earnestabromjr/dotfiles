@@ -1,0 +1,47 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "Link_HomePage": {
+      "message": "Extension Home Page"
+   },
+   "Link_PP": {
+      "message": "Privacy Policy"
+   },
+   "Link_Terms": {
+      "message": "Terms of Use"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>We do not get access to your Google username or password.\u003C/p>\u003Cp>The app only receives a token from Google so we can put photos into your Google Photos.\u003C/p>\u003Cp>The token is stored in browser and never sent to us.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Login Failed"
+   },
+   "LoginPrompt": {
+      "message": "You need to log in into Google Photos to upload photos. Click on the login button to begin."
+   },
+   "LoginSuccessful": {
+      "message": "You have successfully logged in! You can now save photos to Google Photos."
+   },
+   "Popup_Instruction": {
+      "message": "Just right click on any image and choose \"Save to Google Photos\""
+   },
+   "RateUs": {
+      "message": "Please Rate Us"
+   },
+   "SaveFailed": {
+      "message": "There was a problem saving image to Google Photos"
+   },
+   "SaveSuccessful": {
+      "message": "Image saved to Google Photos!"
+   },
+   "SaveToMenu": {
+      "message": "Save to Google Photos"
+   },
+   "TryAgain": {
+      "message": "Try Again"
+   }
+}

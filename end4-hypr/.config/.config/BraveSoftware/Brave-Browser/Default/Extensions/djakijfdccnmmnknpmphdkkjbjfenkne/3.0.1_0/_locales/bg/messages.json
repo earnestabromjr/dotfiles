@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Ние не получаваме достъп до вашето потребителско име или парола за Google.\u003C/p>\u003Cp> Приложението получава само токен от Google, за да можем да поставим снимки във вашите Google Photos.\u003C/p>\u003Cp> Токенът се съхранява в браузъра и никога не ни се изпраща.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Неуспешно влизане"
+   },
+   "LoginPrompt": {
+      "message": "Трябва да влезете в Google Photos, за да качите снимки"
+   },
+   "LoginSuccessful": {
+      "message": "Влезли сте успешно! Вече можете да запазвате снимки в Google Photos."
+   },
+   "Popup_Instruction": {
+      "message": "Просто щракнете с десния бутон върху всяко изображение и изберете „Запазване в Google Photos“"
+   },
+   "RateUs": {
+      "message": "Моля, оценете ни"
+   },
+   "SaveFailed": {
+      "message": "При запазването на изображението в Google Photos възникна проблем"
+   },
+   "SaveSuccessful": {
+      "message": "Изображението е запазено в Google Photos!"
+   },
+   "SaveToMenu": {
+      "message": "Запазване в Google Photos"
+   },
+   "TryAgain": {
+      "message": "Опитай пак"
+   }
+}

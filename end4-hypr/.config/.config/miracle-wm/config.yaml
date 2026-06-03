@@ -1,0 +1,48 @@
+inner_gaps:
+  x: 10
+  y: 10
+outer_gaps:
+  x: 20
+  y: 20
+resize_jump: 50
+
+default_action_overrides:
+  - name: toggle_floating
+    action: down
+    modifiers:
+      - primary
+      - shift
+    key: KEY_SPACE
+
+custom_actions:
+  - command: dms ipc call launcher toggle
+    action: down
+    modifiers:
+      - primary
+    key: d
+  - command: dms ipc call powermenu toggle
+    action: down
+    modifiers:
+      - primary
+      - shift
+    key: e
+  - command: brave-browser
+    action: down
+    modifiers:
+      - primary
+    key: b
+
+startup_apps:
+  - command: /usr/libexec/miracle-wm-dms-session
+    restart_on_death: true
+
+border:
+  size: 2
+  color: 0x00ffff99
+  focus_color: 0xff00ffff
+
+keyboard:
+  keymap:
+    language: en
+    variant: qwerty
+    options: [caps:swapescape]

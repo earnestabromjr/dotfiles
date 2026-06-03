@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Toby</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+      body.Toby {
+        background-color: #cecece;
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+      }
+
+      .box {
+        border-right: 1px solid rgba(190, 190, 190, 0.5);
+        height: 100%;
+      }
+
+      .preloadedBg {
+        display: grid;
+        grid-template-columns: 60px 220px 1fr 220px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+
+      .bgImage {
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-image: url('/img/preloadedBg.png');
+        border-right: 1px solid rgba(190, 190, 190, 0.5);
+      }
+
+      .circle {
+        height: 40px;
+        width: 40px;
+        background: #bebebe;
+        opacity: 0.5;
+        border-radius: 1000px;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+      }
+
+      #root {
+        height: 100%;
+      }
+
+      .readOnlyMode a:not(.readable),
+      .readOnlyMode button:not(.readable),
+      .readOnlyMode .writable {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    </style>
+    <script type="module" crossorigin src="/chunks/toby-BPVHihW4.js"></script>
+    <link rel="modulepreload" crossorigin href="/chunks/Note-BF7hnBjn.js">
+    <link rel="modulepreload" crossorigin href="/chunks/useSessionStart-Dwvo8Odt.js">
+    <link rel="modulepreload" crossorigin href="/chunks/openTobyParams-BKZb2iD0.js">
+    <link rel="stylesheet" crossorigin href="/assets/Note-DqQPw3Pp.css">
+    <link rel="stylesheet" crossorigin href="/assets/useSessionStart-BZLU2eSn.css">
+    <link rel="stylesheet" crossorigin href="/assets/toby-DU2cFutj.css">
+  </head>
+  <body class="Toby">
+    <div class="preloadedBg">
+      <div class="box"><div class="circle"></div></div>
+      <div class="box"></div>
+      <div class="bgImage"></div>
+      <div class="box"></div>
+    </div>
+    <div id="root"></div>
+    <!-- Uncomment to connect to standalone React DevTools (run: npx react-devtools) -->
+    <!-- <script src="http://localhost:8097"></script> -->
+  </body>
+</html>

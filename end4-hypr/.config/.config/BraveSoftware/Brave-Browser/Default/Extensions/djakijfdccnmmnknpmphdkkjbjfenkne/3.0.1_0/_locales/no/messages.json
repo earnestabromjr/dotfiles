@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Vi får ikke tilgang til ditt Google-brukernavn eller passord.\u003C/p>\u003Cp> Appen mottar bare et token fra Google slik at vi kan legge inn bilder i Google Fotoene dine.\u003C/p>\u003Cp> Tokenet lagres i nettleseren og sendes aldri til oss.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Innlogging feilet"
+   },
+   "LoginPrompt": {
+      "message": "Du må logge på Google Foto for å laste opp bilder"
+   },
+   "LoginSuccessful": {
+      "message": "Du har logget på! Du kan nå lagre bilder i Google Foto."
+   },
+   "Popup_Instruction": {
+      "message": "Bare høyreklikk på et bilde og velg &quot;Lagre i Google Foto&quot;"
+   },
+   "RateUs": {
+      "message": "Vennligst ranger oss"
+   },
+   "SaveFailed": {
+      "message": "Det oppsto et problem med å lagre bildet i Google Foto"
+   },
+   "SaveSuccessful": {
+      "message": "Bilde lagret i Google Foto!"
+   },
+   "SaveToMenu": {
+      "message": "Lagre i Google Foto"
+   },
+   "TryAgain": {
+      "message": "Prøv igjen"
+   }
+}

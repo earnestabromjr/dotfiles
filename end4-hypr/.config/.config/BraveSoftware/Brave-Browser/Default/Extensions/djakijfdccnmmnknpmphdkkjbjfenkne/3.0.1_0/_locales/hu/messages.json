@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Nem férünk hozzá Google felhasználónevéhez vagy jelszavához.\u003C/p>\u003Cp> Az alkalmazás csak egy tokent kap a Google-tól, hogy fotókat helyezhessünk el a Google Fotókba.\u003C/p>\u003Cp> A tokent a böngésző tárolja, és soha nem küldi el nekünk.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Bejelentkezés sikertelen"
+   },
+   "LoginPrompt": {
+      "message": "Fényképek feltöltéséhez be kell jelentkeznie a Google Fotók szolgáltatásba"
+   },
+   "LoginSuccessful": {
+      "message": "Sikeresen bejelentkeztél! Most már mentheti a fotókat a Google Fotókba."
+   },
+   "Popup_Instruction": {
+      "message": "Csak kattintson a jobb gombbal bármelyik képre, és válassza a &quot;Mentés a Google Fotókba&quot; lehetőséget."
+   },
+   "RateUs": {
+      "message": "Kérjük, értékelje minket"
+   },
+   "SaveFailed": {
+      "message": "Hiba történt a kép mentésekor a Google Fotókba"
+   },
+   "SaveSuccessful": {
+      "message": "A kép mentve a Google Fotókba!"
+   },
+   "SaveToMenu": {
+      "message": "Mentés a Google Fotókba"
+   },
+   "TryAgain": {
+      "message": "Próbáld újra"
+   }
+}

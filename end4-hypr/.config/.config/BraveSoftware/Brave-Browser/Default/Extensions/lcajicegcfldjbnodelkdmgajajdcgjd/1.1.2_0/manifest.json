@@ -1,0 +1,33 @@
+{
+   "background": {
+      "service_worker": "./background.js"
+   },
+   "commands": {
+      "clone-in-vscode": {
+         "description": "Clone a Github repo directly to vscode",
+         "suggested_key": {
+            "default": "Ctrl+Shift+Down",
+            "mac": "Command+Shift+Down"
+         }
+      },
+      "open-with-vscodedev": {
+         "description": "Quickly open Github repos with vscode.dev",
+         "suggested_key": {
+            "default": "Ctrl+Shift+Up",
+            "mac": "Command+Shift+Up"
+         }
+      }
+   },
+   "description": "Quickly open github repos with vscode.dev or clone a repo directly to vscode.",
+   "host_permissions": [ "*://github.com/*" ],
+   "icons": {
+      "128": "./images/icons/icon-128.png",
+      "48": "./images/icons/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi32NewRlrIc/2ieseiQPZHmuVlQl2KpCqZeAY13O3cbLyruSZXlbCcfcsG84vUxxRRfEOtQ3G2vqhVAmG7s2ouOVSqvUOKDAOAusBCH6H4b2pX2B8AXG4dyYdT8pxY1nTNKPf6jd8uQKuPCkBC2ZeCb+ZtSipzKB9iq1HijiRXt8lwSAlGT+OMaNIuYBajRUERmChUqr7LdPop0gZAHHgiR7t/VJtochzApUTENSK2dCx1mNuWORR6hKde79UQYg19/WAvhlny15ot5eo/ed9aJ3eAjW6LTkpAj2u0N1BeaEF1FaNu58uckEXQnEJLaat29AIlGLc6ByZxDHL9M/awIDAQAB",
+   "manifest_version": 3,
+   "name": "Github to vscode",
+   "permissions": [ "tabs", "contextMenus", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.2"
+}

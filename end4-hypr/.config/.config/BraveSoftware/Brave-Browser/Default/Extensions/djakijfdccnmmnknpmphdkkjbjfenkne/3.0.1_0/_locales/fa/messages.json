@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp style=\";text-align:right;direction:rtl\">ما به نام کاربری یا رمز عبور Google شما دسترسی نداریم.\u003C/p>\u003Cp style=\";text-align:right;direction:rtl\"> این برنامه فقط یک رمز از Google دریافت می کند تا بتوانیم عکس ها را در Google Photos شما قرار دهیم.\u003C/p>\u003Cp style=\";text-align:right;direction:rtl\"> رمز در مرورگر ذخیره می شود و هرگز برای ما ارسال نمی شود.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "ورود ناموفق بود"
+   },
+   "LoginPrompt": {
+      "message": "برای آپلود عکس ها باید وارد Google Photos شوید"
+   },
+   "LoginSuccessful": {
+      "message": "شما با موفقیت وارد شدید! اکنون می توانید عکس ها را در Google Photos ذخیره کنید."
+   },
+   "Popup_Instruction": {
+      "message": "فقط روی هر تصویر کلیک راست کرده و &quot;ذخیره در Google Photos&quot; را انتخاب کنید."
+   },
+   "RateUs": {
+      "message": "لطفا به ما امتیاز دهید"
+   },
+   "SaveFailed": {
+      "message": "مشکلی در ذخیره تصویر در Google Photos وجود داشت"
+   },
+   "SaveSuccessful": {
+      "message": "تصویر در Google Photos ذخیره شد!"
+   },
+   "SaveToMenu": {
+      "message": "در Google Photos ذخیره کنید"
+   },
+   "TryAgain": {
+      "message": "دوباره امتحان کنید"
+   }
+}

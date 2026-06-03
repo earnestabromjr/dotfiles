@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>No tenim accés al vostre nom d&#39;usuari o contrasenya de Google.\u003C/p>\u003Cp> L&#39;aplicació només rep un testimoni de Google perquè puguem posar fotos a Google Fotos.\u003C/p>\u003Cp> El testimoni s&#39;emmagatzema al navegador i mai no se&#39;ns envia.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Error a l&#39;iniciar sessió"
+   },
+   "LoginPrompt": {
+      "message": "Heu d&#39;iniciar sessió a Google Fotos per penjar fotos"
+   },
+   "LoginSuccessful": {
+      "message": "Heu iniciat sessió correctament! Ara pots desar fotos a Google Fotos."
+   },
+   "Popup_Instruction": {
+      "message": "Feu clic amb el botó dret a qualsevol imatge i trieu &quot;Desa a Google Fotos&quot;"
+   },
+   "RateUs": {
+      "message": "Si us plau, puntueu-nos"
+   },
+   "SaveFailed": {
+      "message": "S&#39;ha produït un problema en desar la imatge a Google Fotos"
+   },
+   "SaveSuccessful": {
+      "message": "S&#39;ha desat la imatge a Google Fotos!"
+   },
+   "SaveToMenu": {
+      "message": "Desa a Google Fotos"
+   },
+   "TryAgain": {
+      "message": "Torna-ho a provar"
+   }
+}

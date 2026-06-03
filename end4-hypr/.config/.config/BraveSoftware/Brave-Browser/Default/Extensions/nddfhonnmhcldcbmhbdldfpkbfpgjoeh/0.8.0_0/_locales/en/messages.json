@@ -1,0 +1,22 @@
+{
+   "QUEST_MARK": {
+      "description": "The replacement for the question mark.",
+      "message": "question mark"
+   },
+   "QUOT_MARK": {
+      "description": "The replacement for the quotation mark.",
+      "message": "quotation mark"
+   },
+   "TAG_END": {
+      "description": "The replacement for the \">\" character. Used with HTML entities.",
+      "message": " "
+   },
+   "TAG_START": {
+      "description": "The replacement for the \"\u003C\" character. Used with HTML entities.",
+      "message": " "
+   },
+   "THREE_DOTS": {
+      "description": "The replacement for the \"...\" characters.",
+      "message": "dot dot dot"
+   }
+}

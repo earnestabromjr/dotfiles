@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Chúng tôi không có quyền truy cập vào tên người dùng hoặc mật khẩu Google của bạn.\u003C/p>\u003Cp> Ứng dụng chỉ nhận được mã thông báo từ Google để chúng tôi có thể đưa ảnh vào Google Photos của bạn.\u003C/p>\u003Cp> Mã thông báo được lưu trữ trong trình duyệt và không bao giờ được gửi cho chúng tôi.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Đăng nhập thất bại"
+   },
+   "LoginPrompt": {
+      "message": "Bạn cần đăng nhập vào Google Photos để tải ảnh lên"
+   },
+   "LoginSuccessful": {
+      "message": "Bạn đã đăng nhập thành công! Giờ đây, bạn có thể lưu ảnh vào Google Photos."
+   },
+   "Popup_Instruction": {
+      "message": "Chỉ cần nhấp chuột phải vào bất kỳ hình ảnh nào và chọn &quot;Lưu vào Google Photos&quot;"
+   },
+   "RateUs": {
+      "message": "Vui lòng đánh giá chúng tôi"
+   },
+   "SaveFailed": {
+      "message": "Đã xảy ra sự cố khi lưu hình ảnh vào Google Photos"
+   },
+   "SaveSuccessful": {
+      "message": "Đã lưu hình ảnh vào Google Photos!"
+   },
+   "SaveToMenu": {
+      "message": "Lưu vào Google Photos"
+   },
+   "TryAgain": {
+      "message": "Thử lại"
+   }
+}

@@ -1,0 +1,30 @@
+{
+   "action": {
+      "default_popup": "popup/popup.html",
+      "default_title": "Lorem Ipsum Generator"
+   },
+   "author": {
+      "email": "andrewastral8@gmail.com"
+   },
+   "background": {
+      "service_worker": "service-worker.js"
+   },
+   "content_scripts": [ {
+      "js": [ "content-script.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_shortDesc__",
+   "homepage_url": "https://lorem-ipsum-generator.app/",
+   "icons": {
+      "128": "logo/128x128.png",
+      "16": "logo/16x16.png",
+      "48": "logo/48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5Fhij5KBa0W0cOXpJ0ZVR567D8n+QNZirJ2pnatoFUqFB5ZU8MeoDP71YSwTpQ3bgkcgtHz3RcXu+PkOf9mak3Wzur5IbOtKQm4a7th908RZgAy2YwqH1Yv8gwC7oA1jJHNUyfV7W6Jor9/F46LgmA9Ya9R9ydKf37s7JKY7LbtFqOFz5VZgux+0CktpvckoDKTNOdlMvJO/HmWthlbd09JT7p6YY1uuoEbtyCSWBiU3pS6FYwYGb0Eo+9n1/y1S5LvDOEoJ9obTRLhOGK4K1PkSgylNqr1m1RASzQMGDLaPPLhS5eGApo9T/nqcI+zi7lBkaAK6DsFeOWTz/CQEbwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "permissions": [ "contextMenus", "storage", "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1"
+}

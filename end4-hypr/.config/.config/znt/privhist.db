@@ -1,0 +1,5 @@
+sudo -E nvim /etc/xdg/foot/foot.ini
+curl -fsSL https://christitus.com/linux | sh
+curl -fsSL https://christitus.com/linux | sh
+sudo tailscale set --operator=$USER
+exec zsh

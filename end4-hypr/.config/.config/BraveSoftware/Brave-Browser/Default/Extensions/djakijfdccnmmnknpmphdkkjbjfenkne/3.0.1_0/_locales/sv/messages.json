@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Vi får inte tillgång till ditt Google-användarnamn eller lösenord.\u003C/p>\u003Cp> Appen får bara en token från Google så att vi kan lägga in foton i dina Google Foton.\u003C/p>\u003Cp> Token lagras i webbläsaren och skickas aldrig till oss.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Inloggningen misslyckades"
+   },
+   "LoginPrompt": {
+      "message": "Du måste logga in på Google Foton för att ladda upp bilder"
+   },
+   "LoginSuccessful": {
+      "message": "Din inloggning lyckades! Du kan nu spara foton i Google Foto."
+   },
+   "Popup_Instruction": {
+      "message": "Högerklicka bara på valfri bild och välj &quot;Spara till Google Foton&quot;"
+   },
+   "RateUs": {
+      "message": "Vänligen betygsätt oss"
+   },
+   "SaveFailed": {
+      "message": "Det gick inte att spara bilden i Google Foto"
+   },
+   "SaveSuccessful": {
+      "message": "Bilden har sparats i Google Foto!"
+   },
+   "SaveToMenu": {
+      "message": "Spara i Google Foton"
+   },
+   "TryAgain": {
+      "message": "Försök igen"
+   }
+}

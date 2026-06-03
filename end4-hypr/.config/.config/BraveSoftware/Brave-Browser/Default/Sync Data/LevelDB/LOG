@@ -1,0 +1,15 @@
+2026/06/03-01:00:07.412 70b24 Reusing MANIFEST /home/terrya/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/06/03-01:00:07.412 70b24 Recovering log #42
+2026/06/03-01:00:07.413 70b24 Reusing old log /home/terrya/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000042.log 
+2026/06/03-02:04:30.431 70b34 Level-0 table #46: started
+2026/06/03-02:04:30.459 70b34 Level-0 table #46: 59131 bytes OK
+2026/06/03-02:04:30.474 70b34 Delete type=0 #42
+2026/06/03-02:04:30.474 70b34 Compacting 4@0 + 1@1 files
+2026/06/03-02:04:30.502 70b34 Generated table #47@0: 57 keys, 7688 bytes
+2026/06/03-02:04:30.502 70b34 Compacted 4@0 + 1@1 files => 7688 bytes
+2026/06/03-02:04:30.514 70b34 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/03-02:04:30.515 70b34 Delete type=2 #36
+2026/06/03-02:04:30.515 70b34 Delete type=2 #38
+2026/06/03-02:04:30.515 70b34 Delete type=2 #40
+2026/06/03-02:04:30.515 70b34 Delete type=2 #43
+2026/06/03-02:04:30.515 70b34 Delete type=2 #46

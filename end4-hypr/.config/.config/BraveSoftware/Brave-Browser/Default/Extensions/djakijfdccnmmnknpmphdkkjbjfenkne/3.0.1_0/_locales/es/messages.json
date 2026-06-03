@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>No tenemos acceso a su nombre de usuario o contraseña de Google.\u003C/p>\u003Cp> La aplicación solo recibe un token de Google para que podamos poner fotos en sus Google Photos.\u003C/p>\u003Cp> El token se almacena en el navegador y nunca se nos envía.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Error de inicio de sesion"
+   },
+   "LoginPrompt": {
+      "message": "Debes iniciar sesión en Google Photos para subir fotos."
+   },
+   "LoginSuccessful": {
+      "message": "¡Has iniciado sesión correctamente! Ahora puede guardar fotos en Google Photos."
+   },
+   "Popup_Instruction": {
+      "message": "Simplemente haz clic derecho en cualquier imagen y elige &quot;Guardar en Google Fotos&quot;."
+   },
+   "RateUs": {
+      "message": "Por favor califícanos"
+   },
+   "SaveFailed": {
+      "message": "Hubo un problema al guardar la imagen en Google Fotos"
+   },
+   "SaveSuccessful": {
+      "message": "¡Imagen guardada en Google Photos!"
+   },
+   "SaveToMenu": {
+      "message": "Guardar en Google Fotos"
+   },
+   "TryAgain": {
+      "message": "Inténtalo de nuevo"
+   }
+}

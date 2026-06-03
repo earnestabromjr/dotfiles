@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Nous n&#39;avons pas accès à votre nom d&#39;utilisateur ou mot de passe Google.\u003C/p>\u003Cp> L&#39;application ne reçoit qu&#39;un jeton de Google afin que nous puissions mettre des photos dans vos photos Google.\u003C/p>\u003Cp> Le jeton est stocké dans le navigateur et ne nous est jamais envoyé.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Échec de la connexion"
+   },
+   "LoginPrompt": {
+      "message": "Vous devez vous connecter à Google Photos pour télécharger des photos"
+   },
+   "LoginSuccessful": {
+      "message": "Vous vous êtes connecté avec succès! Vous pouvez maintenant enregistrer des photos dans Google Photos."
+   },
+   "Popup_Instruction": {
+      "message": "Faites un clic droit sur n&#39;importe quelle image et choisissez &quot;Enregistrer dans Google Photos&quot;"
+   },
+   "RateUs": {
+      "message": "Veuillez nous évaluer"
+   },
+   "SaveFailed": {
+      "message": "Un problème est survenu lors de l&#39;enregistrement de l&#39;image dans Google Photos"
+   },
+   "SaveSuccessful": {
+      "message": "Image enregistrée dans Google Photos !"
+   },
+   "SaveToMenu": {
+      "message": "Enregistrer dans Google Photos"
+   },
+   "TryAgain": {
+      "message": "Réessayer"
+   }
+}

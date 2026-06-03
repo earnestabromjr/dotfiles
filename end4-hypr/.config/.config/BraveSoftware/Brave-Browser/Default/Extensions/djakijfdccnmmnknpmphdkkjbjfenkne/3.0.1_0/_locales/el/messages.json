@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Δεν έχουμε πρόσβαση στο όνομα χρήστη ή τον κωδικό πρόσβασής σας στο Google.\u003C/p>\u003Cp> Η εφαρμογή λαμβάνει μόνο ένα διακριτικό από την Google, ώστε να μπορούμε να τοποθετήσουμε φωτογραφίες στις Φωτογραφίες Google σας.\u003C/p>\u003Cp> Το διακριτικό αποθηκεύεται στο πρόγραμμα περιήγησης και δεν μας αποστέλλεται ποτέ.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Η σύνδεση απέτυχε"
+   },
+   "LoginPrompt": {
+      "message": "Πρέπει να συνδεθείτε στο Google Photos για να ανεβάσετε φωτογραφίες"
+   },
+   "LoginSuccessful": {
+      "message": "Έχετε συνδεθεί με επιτυχία! Τώρα μπορείτε να αποθηκεύσετε φωτογραφίες στο Google Photos."
+   },
+   "Popup_Instruction": {
+      "message": "Απλώς κάντε δεξί κλικ σε οποιαδήποτε εικόνα και επιλέξτε &quot;Αποθήκευση στις Φωτογραφίες Google&quot;"
+   },
+   "RateUs": {
+      "message": "Παρακαλώ αξιολογήστε μας"
+   },
+   "SaveFailed": {
+      "message": "Παρουσιάστηκε πρόβλημα κατά την αποθήκευση της εικόνας στο Google Photos"
+   },
+   "SaveSuccessful": {
+      "message": "Η εικόνα αποθηκεύτηκε στις Φωτογραφίες Google!"
+   },
+   "SaveToMenu": {
+      "message": "Αποθήκευση στις Φωτογραφίες Google"
+   },
+   "TryAgain": {
+      "message": "Προσπάθησε ξανά"
+   }
+}

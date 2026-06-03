@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Vi får ikke adgang til dit Google-brugernavn eller -adgangskode.\u003C/p>\u003Cp> Appen modtager kun et token fra Google, så vi kan lægge billeder ind i dine Google Fotos.\u003C/p>\u003Cp> Tokenet gemmes i browseren og sendes aldrig til os.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Login mislykkedes"
+   },
+   "LoginPrompt": {
+      "message": "Du skal logge ind på Google Fotos for at uploade billeder"
+   },
+   "LoginSuccessful": {
+      "message": "Du har logget ind! Du kan nu gemme billeder i Google Fotos."
+   },
+   "Popup_Instruction": {
+      "message": "Bare højreklik på et billede og vælg &quot;Gem til Google Fotos&quot;"
+   },
+   "RateUs": {
+      "message": "Bedøm os"
+   },
+   "SaveFailed": {
+      "message": "Der opstod et problem med at gemme billedet i Google Fotos"
+   },
+   "SaveSuccessful": {
+      "message": "Billedet blev gemt i Google Fotos!"
+   },
+   "SaveToMenu": {
+      "message": "Gem i Google Fotos"
+   },
+   "TryAgain": {
+      "message": "Prøv igen"
+   }
+}

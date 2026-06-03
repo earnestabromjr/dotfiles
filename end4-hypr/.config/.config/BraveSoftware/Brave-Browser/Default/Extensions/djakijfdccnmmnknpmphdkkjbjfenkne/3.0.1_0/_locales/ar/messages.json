@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp style=\";text-align:right;direction:rtl\">لا يمكننا الوصول إلى اسم مستخدم Google أو كلمة المرور الخاصة بك.\u003C/p>\u003Cp style=\";text-align:right;direction:rtl\"> يتلقى التطبيق رمزًا مميزًا فقط من Google حتى نتمكن من وضع الصور في صور Google الخاصة بك.\u003C/p>\u003Cp style=\";text-align:right;direction:rtl\"> يتم تخزين الرمز المميز في المتصفح ولا يتم إرساله إلينا أبدًا.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "فشل عملية الدخول"
+   },
+   "LoginPrompt": {
+      "message": "تحتاج إلى تسجيل الدخول إلى صور Google لتحميل الصور"
+   },
+   "LoginSuccessful": {
+      "message": "لقد قمت بتسجيل الدخول بنجاح! يمكنك الآن حفظ الصور في صور Google."
+   },
+   "Popup_Instruction": {
+      "message": "ما عليك سوى النقر بزر الماوس الأيمن على أي صورة واختيار &quot;حفظ في صور Google&quot;"
+   },
+   "RateUs": {
+      "message": "ارجوك قم بتقييمنا"
+   },
+   "SaveFailed": {
+      "message": "حدثت مشكلة أثناء حفظ الصورة في صور Google"
+   },
+   "SaveSuccessful": {
+      "message": "تم حفظ الصورة في صور Google!"
+   },
+   "SaveToMenu": {
+      "message": "حفظ في صور جوجل"
+   },
+   "TryAgain": {
+      "message": "حاول ثانية"
+   }
+}

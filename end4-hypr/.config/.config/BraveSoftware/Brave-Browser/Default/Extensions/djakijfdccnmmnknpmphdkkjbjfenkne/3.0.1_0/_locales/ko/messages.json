@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>귀하의 Google 사용자 이름 또는 비밀번호에 액세스할 수 없습니다.\u003C/p>\u003Cp> 앱은 Google에서 토큰을 받기만 하므로 Google 포토에 사진을 넣을 수 있습니다.\u003C/p>\u003Cp> 토큰은 브라우저에 저장되며 결코 우리에게 전송되지 않습니다.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "로그인 실패"
+   },
+   "LoginPrompt": {
+      "message": "사진을 업로드하려면 Google 포토에 로그인해야 합니다."
+   },
+   "LoginSuccessful": {
+      "message": "성공적으로 로그인했습니다! 이제 사진을 Google 포토에 저장할 수 있습니다."
+   },
+   "Popup_Instruction": {
+      "message": "이미지를 마우스 오른쪽 버튼으로 클릭하고 &quot;Google 포토에 저장&quot;을 선택하십시오."
+   },
+   "RateUs": {
+      "message": "우리를 평가 해주세요"
+   },
+   "SaveFailed": {
+      "message": "Google 포토에 이미지를 저장하는 중에 문제가 발생했습니다."
+   },
+   "SaveSuccessful": {
+      "message": "Google 포토에 이미지가 저장되었습니다!"
+   },
+   "SaveToMenu": {
+      "message": "Google 포토에 저장"
+   },
+   "TryAgain": {
+      "message": "다시 시도하십시오"
+   }
+}

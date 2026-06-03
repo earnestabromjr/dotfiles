@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Nie mamy dostępu do Twojej nazwy użytkownika ani hasła Google.\u003C/p>\u003Cp> Aplikacja otrzymuje tylko token od Google, dzięki czemu możemy umieszczać zdjęcia w Twoich Zdjęciach Google.\u003C/p>\u003Cp> Token jest przechowywany w przeglądarce i nigdy nie jest do nas wysyłany.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Logowanie nie powiodło się"
+   },
+   "LoginPrompt": {
+      "message": "Aby przesłać zdjęcia, musisz zalogować się do Zdjęć Google"
+   },
+   "LoginSuccessful": {
+      "message": "Logowanie zakończone powodzeniem! Możesz teraz zapisywać zdjęcia w Zdjęciach Google."
+   },
+   "Popup_Instruction": {
+      "message": "Wystarczy kliknąć prawym przyciskiem myszy dowolny obraz i wybrać „Zapisz w Zdjęciach Google”"
+   },
+   "RateUs": {
+      "message": "Oceń nas"
+   },
+   "SaveFailed": {
+      "message": "Podczas zapisywania obrazu w Zdjęciach Google wystąpił problem"
+   },
+   "SaveSuccessful": {
+      "message": "Obraz zapisany w Zdjęciach Google!"
+   },
+   "SaveToMenu": {
+      "message": "Zapisz w Zdjęciach Google"
+   },
+   "TryAgain": {
+      "message": "Spróbuj ponownie"
+   }
+}

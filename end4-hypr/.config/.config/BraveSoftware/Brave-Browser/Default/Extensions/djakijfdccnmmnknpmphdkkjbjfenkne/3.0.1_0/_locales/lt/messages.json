@@ -1,0 +1,38 @@
+{
+   "AppDesc": {
+      "message": "Save Images to Google Photos with right click"
+   },
+   "AppName": {
+      "message": "Save Image To Google Photos"
+   },
+   "LoginExplanation": {
+      "message": "\u003Cp>Negalime pasiekti jūsų „Google“ vartotojo vardo ar slaptažodžio.\u003C/p>\u003Cp> Programa iš „Google“ gauna tik prieigos raktą, kad galėtume įdėti nuotraukas į jūsų „Google“ nuotraukas.\u003C/p>\u003Cp> Žetonas yra saugomas naršyklėje ir niekada mums nesiunčiamas.\u003C/p>"
+   },
+   "LoginFailed": {
+      "message": "Prisijungimas nepavyko"
+   },
+   "LoginPrompt": {
+      "message": "Norėdami įkelti nuotraukas, turite prisijungti prie „Google“ nuotraukų"
+   },
+   "LoginSuccessful": {
+      "message": "Jūs sėkmingai prisijungėte! Dabar galite išsaugoti nuotraukas „Google“ nuotraukose."
+   },
+   "Popup_Instruction": {
+      "message": "Tiesiog dešiniuoju pelės mygtuku spustelėkite bet kurį vaizdą ir pasirinkite „Išsaugoti „Google“ nuotraukose“"
+   },
+   "RateUs": {
+      "message": "Prašau Įvertink mus"
+   },
+   "SaveFailed": {
+      "message": "Išsaugant vaizdą „Google“ nuotraukose kilo problema"
+   },
+   "SaveSuccessful": {
+      "message": "Vaizdas išsaugotas „Google“ nuotraukose!"
+   },
+   "SaveToMenu": {
+      "message": "Išsaugoti „Google“ nuotraukose"
+   },
+   "TryAgain": {
+      "message": "Bandyk iš naujo"
+   }
+}

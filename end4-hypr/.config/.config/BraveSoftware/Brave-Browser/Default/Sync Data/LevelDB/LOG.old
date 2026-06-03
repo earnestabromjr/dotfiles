@@ -1,0 +1,6 @@
+2026/06/02-17:32:48.953 d7e Reusing MANIFEST /home/terrya/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/06/02-17:32:49.065 d7e Recovering log #39
+2026/06/02-17:32:49.102 d7e Reusing old log /home/terrya/.config/BraveSoftware/Brave-Browser/Default/Sync Data/LevelDB/000039.log 
+2026/06/02-18:02:20.572 d8e Level-0 table #43: started
+2026/06/02-18:02:20.597 d8e Level-0 table #43: 59361 bytes OK
+2026/06/02-18:02:20.615 d8e Delete type=0 #39
