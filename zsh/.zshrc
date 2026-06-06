@@ -42,7 +42,7 @@ export MANPAGER="nvim +Man!"
 # if [ -e /home/nesto/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nesto/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 # Antigen 
-source $HOME/antigen.zsh
+source $HOME/.dotfiles/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -203,9 +203,6 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-eval "$(zoxide init zsh)"
-eval "$(atuin init zsh)"
-eval "$(starship init zsh)"
 
 # pnpm
 export PNPM_HOME="/home/terrya/.local/share/pnpm"
@@ -214,5 +211,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-eval "$(/usr/bin/mise activate zsh)"
+
+# Evals
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
+# eval "$(/usr/bin/mise activate zsh)"
+# eval "$(atuin init zsh)"
