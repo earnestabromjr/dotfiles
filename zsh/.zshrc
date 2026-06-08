@@ -218,3 +218,6 @@ eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
 # eval "$(/usr/bin/mise activate zsh)"
 # eval "$(atuin init zsh)"
+
+# WSL related aliases
+alias winhome="pushd /mnt/c/Users/$USER/"
