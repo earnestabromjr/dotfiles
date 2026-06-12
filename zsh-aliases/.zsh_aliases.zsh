@@ -9,7 +9,7 @@
 # https://gist.github.com/elijahmanor/b279553c0132bfad7eae23e34ceb593b
 #
 
-alias ls="eza --icons"
+# alias ls="eza --icons"
 alias f="fastfetch"
 
 ## Neovim
@@ -38,6 +38,10 @@ alias yays="yay -Ss "
 alias yayi="yay -S "
 alias yayu="yay -Sy"
 alias update="yay -Suy; flatpak update"
+
+alias parus="paru -Ss "
+alias parui="paru -S "
+alias paruu="paru -Sy"
 
 function nvims() {
   items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim")
