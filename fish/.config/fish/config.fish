@@ -267,6 +267,9 @@ alias vk="NVIM_APPNAME=kickstart nvim" # Kickstart
 alias va="NVIM_APPNAME=AstroNvim nvim" # AstroVim
 alias vv="NVIM_APPNAME=nvim-new nvim" # Vim
 
+# Distrobox
+aliass dbe="distrobox-enter "
+
 # fastfetch
 
 # colors to set or unset
