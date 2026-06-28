@@ -82,8 +82,13 @@ alias vim="nvim"
 alias s="kitten ssh"
 alias f="fastfetch"
 
+# Flatpak Aliases
 alias flatse="flatpak search "
 alias flatin="flatpak install "
+
+# PikaOS pikman Aliases
+alias pikse="pikman search "
+alias pikin="pikman install "
 
 # Pacman Aliases
 alias paci="sudo pacman -S"
