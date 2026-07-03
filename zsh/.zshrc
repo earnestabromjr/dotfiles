@@ -1,5 +1,5 @@
-#     _                _    _       _
-#   / \   _ __   __ _| | _(_)_ __ ( )___
+#    _                _    _       _
+#  / \   _ __   __ _| | _(_)_ __ ( )___
 #  / _ \ | '_ \ / _` | |/ / | '_ \|// __|
 # / ___ \| | | | (_| |   <| | | | | \__ \
 #/_/   \_\_| |_|\__,_|_|\_\_|_| |_| |___/
@@ -39,7 +39,9 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export MANPAGER="nvim +Man!"
 
-# if [ -e /home/nesto/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nesto/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
+    . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+fi
 
 # Antigen
 source $HOME/antigen.zsh
@@ -229,8 +231,10 @@ function y() {
 }
 
 eval "$(zoxide init zsh)"
-eval "$(atuin init zsh)"
+# eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
+eval "$(devbox global shellenv)"
 
 # pnpm
 export PNPM_HOME="/home/terrya/.local/share/pnpm"
@@ -239,4 +243,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-eval "$(mise activate zsh)"
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+zstyle ':completion:*' menu select
