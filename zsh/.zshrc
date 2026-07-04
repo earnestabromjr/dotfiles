@@ -111,6 +111,13 @@ alias pki="pikman install "
 alias pkr="pikman remove "
 alias pku="pikman update "
 
+# Brew aliases
+alias brewcode="/home/linuxbrew/.linuxbrew/bin/opencode"
+
+# Home Manager aliases
+alias hm="home-manager"
+alias hms="home-manager switch"
+
 #search content with ripgrep
 alias rg="rg --sort path"
 
