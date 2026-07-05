@@ -28,7 +28,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -42,6 +42,9 @@ export MANPAGER="nvim +Man!"
 if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
     . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 fi
+
+# Zprofile
+source $HOME/.zprofile
 
 # Antigen
 source $HOME/antigen.zsh
