@@ -1,5 +1,5 @@
 local mainMod = "SUPER"
-local secterm= "ghostty"
+local secterm = "ghostty"
 
 -- Mouse Binds
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
@@ -7,6 +7,7 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- App launchers
 hl.bind("SUPER + SHIFT + B", hl.dsp.exec_cmd("chromium"))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("brave-browser"))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(secterm))
 hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("pwvucontrol"))
@@ -120,9 +121,15 @@ hl.bind("SUPER + ALT + F12", hl.dsp.exec_cmd("hyprctl keyword misc:no_vfr 1"))
 -- Screenshots
 hl.bind("CTRL + Print", hl.dsp.exec_cmd("grim ~/Pictures/$(date +'%Y-%m-%d,%H:%M:%S').png; notify-send 'Saved screen'"))
 hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy; notify-send 'Copied screen'"))
-hl.bind("CTRL + SHIFT + Print",
-    hl.dsp.exec_cmd(
-        "wayfreeze & PID=$!; sleep .1; grim -g \"$(slurp)\" ~/Pictures/$(date +'%Y-%m-%d,%H:%M:%S').png; kill $PID; notify-send 'Saved region'"))
-hl.bind("Print",
-    hl.dsp.exec_cmd(
-        "wayfreeze & PID=$!; sleep .1; grim -g \"$(slurp)\" - | wl-copy; kill $PID; notify-send 'Copied region'"))
+hl.bind(
+	"CTRL + SHIFT + Print",
+	hl.dsp.exec_cmd(
+		"wayfreeze & PID=$!; sleep .1; grim -g \"$(slurp)\" ~/Pictures/$(date +'%Y-%m-%d,%H:%M:%S').png; kill $PID; notify-send 'Saved region'"
+	)
+)
+hl.bind(
+	"Print",
+	hl.dsp.exec_cmd(
+		"wayfreeze & PID=$!; sleep .1; grim -g \"$(slurp)\" - | wl-copy; kill $PID; notify-send 'Copied region'"
+	)
+)

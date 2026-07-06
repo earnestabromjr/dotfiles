@@ -1,0 +1,211 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "colorize_brackets": true,
+  "code_lens": "on",
+  "toolbar": {
+    "code_actions": true,
+  },
+  // Finder modal width
+  "file_finder": {
+    "modal_max_width": "medium",
+  },
+  // Scrollbar
+  "scrollbar": {
+    "show": "auto",
+  },
+  "prettier": {
+    "allowed": true,
+  },
+  "use_smartcase_search": true,
+  "tabs": {
+    "show_diagnostics": "errors",
+    "file_icons": true,
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_branch_status_icon": true,
+  },
+  "status_bar": {
+    "show_active_file": true,
+  },
+  "proxy": "",
+  "indent_guides": {
+    "background_coloring": "indent_aware",
+    "coloring": "indent_aware",
+  },
+  "auto_signature_help": true,
+  "which_key": {
+    "delay_ms": 950,
+    "enabled": true,
+  },
+  "autosave": "on_focus_change",
+  "buffer_line_height": "standard",
+  "cli_default_open_behavior": "new_window",
+  "vim": {
+    "show_edit_predictions_in_normal_mode": true,
+    "use_smartcase_find": true,
+    "toggle_relative_line_numbers": true,
+  },
+  "relative_line_numbers": "enabled",
+  "agent": {
+    "dock": "right",
+    "single_file_review": true,
+    "tool_permissions": {
+      "tools": {
+        "delete_path": {
+          "default": "allow",
+        },
+        "move_path": {
+          "default": "allow",
+        },
+        "terminal": {
+          "default": "allow",
+          "always_allow": [
+            {
+              "pattern": "^terraform\\s+validate(\\s|$)",
+            },
+            {
+              "pattern": "^terraform\\s+plan(\\s|$)",
+            },
+            {
+              "pattern": "^mkdir\\b",
+            },
+            {
+              "pattern": "^terraform\\s+init(\\s|$)",
+            },
+            {
+              "pattern": "^terraform\\s+providers(\\s|$)",
+            },
+            {
+              "pattern": "^terraform\\s+state(\\s|$)",
+            },
+          ],
+        },
+        "mcp:terraform-context-server:get_provider_capabilities": {
+          "default": "allow",
+        },
+        "write_file": {
+          "default": "allow",
+        },
+        "create_directory": {
+          "default": "allow",
+        },
+        "mcp:terraform-context-server:get_provider_details": {
+          "default": "allow",
+        },
+        "mcp:terraform-context-server:get_latest_provider_version": {
+          "default": "allow",
+        },
+        "mcp:terraform-context-server:search_providers": {
+          "default": "allow",
+        },
+      },
+    },
+    "default_model": {
+      "provider": "opencode",
+      "model": "free/big-pickle",
+      "enable_thinking": true,
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "context_servers": {
+    "terraform-context-server": {
+      "enabled": true,
+      "remote": false,
+      "settings": {},
+    },
+  },
+  "ssh_connections": [
+    {
+      "host": "docker",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/core"],
+        },
+        {
+          "paths": ["/root"],
+        },
+        {
+          "paths": ["/root/Repos/docker-compose"],
+        },
+      ],
+    },
+    {
+      "host": "docker-local",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/root/Repos/docker-compose"],
+        },
+      ],
+    },
+    {
+      "host": "flatcar-docker",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/opt/docker-compose-stacks"],
+        },
+      ],
+    },
+    {
+      "host": "homepage",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/./"],
+        },
+        {
+          "paths": ["/opt/homepage"],
+        },
+      ],
+    },
+  ],
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "vim_mode": true,
+  "minimap": {
+    "show": "always",
+  },
+  "agent_servers": {
+    "grok-build": {
+      "type": "registry",
+    },
+    "gemini": {
+      "type": "registry",
+    },
+    "opencode": {
+      "default_config_options": {
+        "mode": "plan",
+        "effort": "max",
+        "model": "opencode/deepseek-v4-flash-free",
+      },
+      "type": "registry",
+    },
+    "cursor": {
+      "type": "registry",
+    },
+    "github-copilot-cli": {
+      "type": "registry",
+    },
+  },
+  "base_keymap": "VSCode",
+  "icon_theme": "Min Icons",
+  "ui_font_size": 16,
+  "buffer_font_size": 17.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha (Blur) [Heavy]",
+  },
+}
