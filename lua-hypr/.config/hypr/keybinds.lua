@@ -1,4 +1,5 @@
 local mainMod = "SUPER"
+local secterm= "ghostty"
 
 -- Mouse Binds
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
@@ -7,9 +8,15 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- App launchers
 hl.bind("SUPER + SHIFT + B", hl.dsp.exec_cmd("chromium"))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(secterm))
 hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("pwvucontrol"))
 hl.bind("SUPER + SHIFT + Q", hl.dsp.exec_cmd("wlogout -p layer-shell"))
 hl.bind("SUPER + SHIFT + F", hl.dsp.exec_cmd("nemo"))
+
+-- System monitors
+hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("gnome-system-monitor"))
+hl.bind(mainMod .. " + SHIFT + O", hl.dsp.exec_cmd("ghostty -e btop"))
+
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("hyprctl reload"))
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("notify-send 'Config Reloaded'"))
 
@@ -39,7 +46,7 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 
 -- Launchers
-hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("fuzzel"))
+hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("$HOME/.nix-profile/bin/fuzzel"))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd("pikabar-launcher"))
 
 -- File manager
@@ -57,6 +64,9 @@ hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
 hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
+
+-- Overview
+hl.bind(mainMod .. " + o", hl.dsp.exec_cmd("qs ipc -c overview call overview toggle"))
 
 -- Workspace switching
 hl.bind("SUPER + 1", hl.dsp.focus({ workspace = 1 }))

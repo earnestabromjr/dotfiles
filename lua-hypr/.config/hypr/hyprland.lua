@@ -27,8 +27,8 @@ hl.config({
 
 hl.config({
     input = {
-        repeat_rate = 50,
-        repeat_delay = 300,
+        repeat_rate = 70,
+        repeat_delay = 200,
         numlock_by_default = 1,
         left_handed = 0,
         kb_options = "caps:swapescape",
@@ -40,11 +40,11 @@ hl.config({
 hl.curve("windowIn", { type = "bezier", points = { { 0.06, 0.71 }, { 0.25, 1 } } })
 hl.curve("windowResize", { type = "bezier", points = { { 0.04, 0.67 }, { 0.38, 1 } } })
 
-hl.animation({ leaf = "windowsIn",  enabled = true, speed = 1, bezier = "windowIn",     style = "slide" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 1, bezier = "windowIn",     style = "slide" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 1, bezier = "windowIn", style = "slide" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 1, bezier = "windowIn", style = "slide" })
 hl.animation({ leaf = "windowsMove", enabled = true, speed = 0.75, bezier = "windowResize" })
-hl.animation({ leaf = "fade",       enabled = true, speed = 1,   bezier = "default" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 1,   bezier = "default" })
+hl.animation({ leaf = "fade", enabled = true, speed = 1, bezier = "default" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 1, bezier = "default" })
 
 hl.config({
     dwindle = {
