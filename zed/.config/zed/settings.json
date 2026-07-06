@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "provider": "zed",
+  },
   "colorize_brackets": true,
   "code_lens": "on",
   "toolbar": {
@@ -37,7 +40,7 @@
   },
   "proxy": "",
   "indent_guides": {
-    "background_coloring": "indent_aware",
+    "enabled": true,
     "coloring": "indent_aware",
   },
   "auto_signature_help": true,
@@ -60,6 +63,9 @@
     "tool_permissions": {
       "tools": {
         "delete_path": {
+          "default": "allow",
+        },
+        "fetch": {
           "default": "allow",
         },
         "move_path": {
@@ -175,7 +181,12 @@
   },
   "vim_mode": true,
   "minimap": {
-    "show": "always",
+    "show": "auto",
+  },
+  "language_models": {
+    "opencode": {
+      "show_free_models": true,
+    },
   },
   "agent_servers": {
     "grok-build": {
@@ -199,6 +210,9 @@
       "type": "registry",
     },
   },
+  "inlay_hints": {
+    "enabled": true,
+  },
   "base_keymap": "VSCode",
   "icon_theme": "Min Icons",
   "ui_font_size": 16,
@@ -207,5 +221,9 @@
     "mode": "dark",
     "light": "One Light",
     "dark": "Catppuccin Mocha (Blur) [Heavy]",
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": false,
   },
 }
