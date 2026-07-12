@@ -11,9 +11,7 @@ export PATH=$HOME/bin:/usr/local/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.local
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="rgm" # set by `omz`
-
-plugins=(git aliases npm ubuntu systemadmin systemd fzf zoxide npm node themes ssh-agent tmux colorize zsh-interactive-cd mise)
+plugins=(git aliases npm ubuntu systemadmin systemd fzf zoxide npm node themes ssh-agent tmux colorize zsh-interactive-cd mise aws)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -116,6 +114,9 @@ alias pku="pikman update "
 
 # Brew aliases
 alias brewcode="/home/linuxbrew/.linuxbrew/bin/opencode"
+
+# Boilerplates alias
+alias bp="boilerplates"
 
 # Home Manager aliases
 alias hm="home-manager"
@@ -257,3 +258,5 @@ esac
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 zstyle ':completion:*' menu select
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"

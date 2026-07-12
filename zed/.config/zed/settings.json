@@ -58,6 +58,7 @@
   },
   "relative_line_numbers": "enabled",
   "agent": {
+    "terminal_init_command": "opencode",
     "dock": "right",
     "single_file_review": true,
     "tool_permissions": {
@@ -115,8 +116,9 @@
       },
     },
     "default_model": {
-      "provider": "opencode",
-      "model": "free/big-pickle",
+      "effort": "medium",
+      "provider": "google",
+      "model": "gemini-3.5-flash",
       "enable_thinking": true,
     },
     "favorite_models": [],
@@ -135,46 +137,76 @@
       "args": [],
       "projects": [
         {
-          "paths": ["/home/core"],
+          "paths": [
+            "/home/core"
+          ]
         },
         {
-          "paths": ["/root"],
+          "paths": [
+            "/root"
+          ]
         },
         {
-          "paths": ["/root/Repos/docker-compose"],
-        },
-      ],
+          "paths": [
+            "/root/Repos/docker-compose"
+          ]
+        }
+      ]
     },
     {
       "host": "docker-local",
       "args": [],
       "projects": [
         {
-          "paths": ["/root/Repos/docker-compose"],
-        },
-      ],
+          "paths": [
+            "/root/Repos/docker-compose"
+          ]
+        }
+      ]
     },
     {
       "host": "flatcar-docker",
       "args": [],
       "projects": [
         {
-          "paths": ["/opt/docker-compose-stacks"],
-        },
-      ],
+          "paths": [
+            "/opt/docker-compose-stacks"
+          ]
+        }
+      ]
     },
     {
       "host": "homepage",
       "args": [],
       "projects": [
         {
-          "paths": ["/./"],
+          "paths": [
+            "/./"
+          ]
         },
         {
-          "paths": ["/opt/homepage"],
-        },
-      ],
+          "paths": [
+            "/opt/homepage"
+          ]
+        }
+      ]
     },
+    {
+      "host": "provisioner",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/./"
+          ]
+        },
+        {
+          "paths": [
+            "/root"
+          ]
+        }
+      ]
+    }
   ],
   "session": {
     "trust_all_worktrees": true,
@@ -189,6 +221,9 @@
     },
   },
   "agent_servers": {
+    "mistral-vibe": {
+      "type": "registry"
+    },
     "grok-build": {
       "type": "registry",
     },
@@ -197,9 +232,9 @@
     },
     "opencode": {
       "default_config_options": {
-        "mode": "plan",
-        "effort": "max",
-        "model": "opencode/deepseek-v4-flash-free",
+        "mode": "build",
+        "effort": "high",
+        "model": "opencode/big-pickle",
       },
       "type": "registry",
     },

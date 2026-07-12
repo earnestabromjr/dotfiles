@@ -1,5 +1,6 @@
 local mainMod = "SUPER"
 local secterm = "ghostty"
+local zenbrowser = "flatpak run app.zen_browser.zen"
 
 -- Mouse Binds
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
@@ -8,11 +9,15 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- App launchers
 hl.bind("SUPER + SHIFT + B", hl.dsp.exec_cmd("chromium"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("brave-browser"))
+hl.bind(mainMod .. " + ALT + B", hl.dsp.exec_cmd(zenbrowser))
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(secterm))
 hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("pwvucontrol"))
 hl.bind("SUPER + SHIFT + Q", hl.dsp.exec_cmd("wlogout -p layer-shell"))
 hl.bind("SUPER + SHIFT + F", hl.dsp.exec_cmd("nemo"))
+
+-- Clipboard
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("copyq show"))
 
 -- System monitors
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("gnome-system-monitor"))
@@ -109,10 +114,10 @@ hl.bind("SUPER + CONTROL + down", hl.dsp.focus({ monitor = "r" }))
 hl.bind(mainMod .. " + tab", hl.dsp.focus({ workspace = "previous" }))
 
 -- Resize active window
-hl.bind("SUPER + ALT + left", hl.dsp.window.resize({ x = -20, y = 0 }))
-hl.bind("SUPER + ALT + right", hl.dsp.window.resize({ x = 20, y = 0 }))
-hl.bind("SUPER + ALT + up", hl.dsp.window.resize({ x = 0, y = -20 }))
-hl.bind("SUPER + ALT + down", hl.dsp.window.resize({ x = 0, y = 20 }))
+hl.bind("SUPER + ALT + left", hl.dsp.window.resize())
+hl.bind("SUPER + ALT + right", hl.dsp.window.resize())
+hl.bind("SUPER + ALT + up", hl.dsp.window.resize())
+hl.bind("SUPER + ALT + down", hl.dsp.window.resize())
 
 -- VFR toggle
 hl.bind(mainMod .. " + F12", hl.dsp.exec_cmd("hyprctl keyword misc:no_vfr 0"))
