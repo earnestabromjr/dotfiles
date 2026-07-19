@@ -1,12 +1,16 @@
-#     _                _    _       _     
-#   / \   _ __   __ _| | _(_)_ __ ( )___ 
+#    _                _    _       _
+#  / \   _ __   __ _| | _(_)_ __ ( )___
 #  / _ \ | '_ \ / _` | |/ / | '_ \|// __|
 # / ___ \| | | | (_| |   <| | | | | \__ \
-#/_/   \_\_| |_|\__,_|_|\_\_|_| |_| |___/                             
+#/_/   \_\_| |_|\__,_|_|\_\_|_| |_| |___/
 #
 
 # If you come from bash you might have to change your $PATH.
+<<<<<<< HEAD
 export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
+=======
+export PATH=$HOME/bin:/usr/local/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
+>>>>>>> pikaos
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -28,7 +32,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -39,10 +43,20 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export MANPAGER="nvim +Man!"
 
-# if [ -e /home/nesto/.nix-profile/etc/profile.d/nix.sh ]; then . /home/nesto/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+if [ -e /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]; then
+    . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+fi
 
+<<<<<<< HEAD
 # Antigen 
 source $HOME/.dotfiles/antigen.zsh
+=======
+# Zprofile
+source $HOME/.zprofile
+
+# Antigen
+source $HOME/antigen.zsh
+>>>>>>> pikaos
 
 antigen use oh-my-zsh
 
@@ -107,6 +121,38 @@ alias dnfu="sudo dnf update"
 alias dnfse="dnf search "
 alias dnfi="dnf install "
 alias dnfr="dnf remove "
+
+# Pikaos Aliases
+alias pks="pikman search "
+alias pki="pikman install "
+alias pkr="pikman remove "
+alias pku="pikman update "
+
+# Brew aliases
+alias brewcode="/home/linuxbrew/.linuxbrew/bin/opencode"
+
+# Home Manager aliases
+alias hm="home-manager"
+alias hms="home-manager switch"
+
+#search content with ripgrep
+alias rg="rg --sort path"
+
+#get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+alias nb="$EDITOR ~/.bashrc"
+alias nz="$EDITOR ~/.zshrc"
+alias nf="$EDITOR ~/.config/fish/config.fish"
+alias nfastfetch="$EDITOR ~/.config/fastfetch/config.jsonc"
+
+#give the list of all installed desktops - xsessions desktops
+alias xd="ls /usr/share/xsessions"
+alias xdw="ls /usr/share/wayland-sessions"
+
+#give a list of the kernels installed
+alias kernel="ls /usr/lib/modules"
+alias kernels="ls /usr/lib/modules"
 
 function nvims() {
   items=("default" "kickstart" "LazyVim" "NvChad" "AstroNvim")
@@ -208,6 +254,14 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+<<<<<<< HEAD
+=======
+eval "$(zoxide init zsh)"
+# eval "$(atuin init zsh)"
+eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
+eval "$(devbox global shellenv)"
+>>>>>>> pikaos
 
 # pnpm
 export PNPM_HOME="/home/terrya/.local/share/pnpm"
@@ -217,6 +271,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+<<<<<<< HEAD
 # Evals
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
@@ -230,3 +285,8 @@ alias winhome="pushd /mnt/c/Users/$USER/"
 
 # Added by Antigravity CLI installer
 export PATH="/home/terrya/.local/bin:$PATH"
+=======
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+zstyle ':completion:*' menu select
+>>>>>>> pikaos

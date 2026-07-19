@@ -1,9 +1,11 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
-# This script is used to update all packages from flatpaks to aur and arch repo
+# Checks if each package manager exists and updates all packages
 
-echo "Updating AUR packages..."
-yay -Syu --noconfirm --sudoloop
+command -v brew >/dev/null 2>&1 && { echo "Updating brew ..."; brew upgrade -y; }
 
-echo "Updating Flatpaks..."
-flatpak update -y
+command -v flatpak >/dev/null 2>&1 && { echo "Updating Flatpaks..."; flatpak update -y; }
+
+command -v pacstall >/dev/null 2>&1 && { echo "Updating pacstall"; pacstall -UpP; }
+
+command -v snap >/dev/null 2>&1 && { echo "Updating snap apps..."; sudo snap refresh; }
