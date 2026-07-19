@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "edit_predictions": {
-    "provider": "zed",
+    "provider": "copilot",
   },
   "colorize_brackets": true,
   "code_lens": "on",
@@ -181,10 +181,12 @@
   },
   "vim_mode": true,
   "minimap": {
-    "show": "auto",
+    "show": "never",
   },
   "language_models": {
     "opencode": {
+      "show_zen_models": false,
+      "show_go_models": false,
       "show_free_models": true,
     },
   },
@@ -220,7 +222,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Catppuccin Mocha (Blur) [Heavy]",
+    "dark": "Catppuccin Macchiato (Blur)",
   },
   "telemetry": {
     "diagnostics": true,
