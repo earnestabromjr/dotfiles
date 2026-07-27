@@ -62,7 +62,11 @@
     "dock": "right",
     "single_file_review": true,
     "tool_permissions": {
+      "default": "allow",
       "tools": {
+        "search_web": {
+          "default": "allow"
+        },
         "delete_path": {
           "default": "allow",
         },
@@ -116,10 +120,9 @@
       },
     },
     "default_model": {
-      "effort": "medium",
-      "provider": "google",
-      "model": "gemini-3.5-flash",
-      "enable_thinking": true,
+      "provider": "opencode",
+      "model": "free/big-pickle",
+      "enable_thinking": false,
     },
     "favorite_models": [],
     "model_parameters": [],
@@ -157,6 +160,16 @@
       "host": "docker-local",
       "args": [],
       "projects": [
+        {
+          "paths": [
+            "/./"
+          ]
+        },
+        {
+          "paths": [
+            "/root/Repos/docker-buildfiles"
+          ]
+        },
         {
           "paths": [
             "/root/Repos/docker-compose"
@@ -200,6 +213,33 @@
             "/./"
           ]
         },
+        {
+          "paths": [
+            "/root"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "podman",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/root"
+          ]
+        },
+        {
+          "paths": [
+            "/root/podman-compose"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "arr-stack",
+      "args": [],
+      "projects": [
         {
           "paths": [
             "/root"
