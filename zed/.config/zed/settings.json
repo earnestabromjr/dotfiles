@@ -115,8 +115,9 @@
       },
     },
     "default_model": {
+      "effort": "high",
       "provider": "opencode",
-      "model": "free/big-pickle",
+      "model": "free/nemotron-3-ultra-free",
       "enable_thinking": true,
     },
     "favorite_models": [],

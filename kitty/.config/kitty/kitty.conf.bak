@@ -4,7 +4,11 @@
 #include current-theme.conf
 
 # Default shell
+<<<<<<< HEAD
 shell /usr/bin/zsh
+=======
+shell zsh
+>>>>>>> pikaos
 
 # Font family. You can also specify different fonts for the
 # bold/italic/bold-italic variants. By default they are derived automatically,
@@ -20,7 +24,7 @@ bold_font        auto
 bold_italic_font auto
 
 # Font size (in pts)
-font_size        11.0
+font_size        14.0
 
 # The foreground color
 # foreground       #c0b18b
